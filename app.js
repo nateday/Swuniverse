@@ -123,80 +123,121 @@
 	}
 
 	function createNodeUI(node) {
-		console.log('Node: ', node);
+		
+		//console.log('Node: ', node);
 
 		let type = node.data ? node.data.type : 'Item';
+		let color = getTypeColor(type);
 
 		switch (type) {
 			case 'Character':
 				return {
-					color: 0x009933, //green
+					color: color,
 					size: 30
 				};
 
 			case 'Planet':
 				return {
-					color: 0x00ffff, //light-blue
+					color: color,
 					size: 30
 				};
 
 			case 'Film':
 				return {
-					color: 0x0066CC, //blue
+					color: color,
 					size: 50
 				};
 
 			case 'Weapon':
 				return {
-					color: 0xff0000, //red
+					color: color,
 					size: 15
 				};
 
 			case 'Vehicle':
 				return {
-					color: 0xffff00, //yellow
+					color: color,
 					size: 25
 				};
 
 			case 'Starship':
 				return {
-					color: 0x9900cc, //purple
+					color: color,
 					size: 25
 				};
 
 			case 'Tool':
 				return {
-					color: 0x663300, //brown
+					color: color,
 					size: 15
 				};
 
 			case 'Species':
 				return {
-					color: 0xff66ff, //pink
+					color: color,
 					size: 15
 				};
 
 			case 'Affiliation':
 				return {
-					color: 0xff8080, //salmon
+					color: color,
 					size: 15
 				};
 
 			default:
 				return {
-					color: 0xFF9933,
+					color: color,
 					size: 10
 				};
 		}
 	}
 
 	function createLinkUI(link) {
-        return {
-            fromColor: 0x333333,
-            toColor: 0x333333
-        };
+		
+		let fromColor = getTypeColor(link.data.from);
+		let toColor = getTypeColor(link.data.to);
+
+		return {
+			fromColor: fromColor,
+			toColor: toColor
+		};
     }
 
+	function getTypeColor(type) {
+
+		switch (type) {
+			case 'Film':
+				return 0x016280; // Blue
+
+			case 'Character':
+				return 0x3E9D33; // Light Green
+
+			case 'Affiliation':
+				return 0x1C5423; // Dark Green	
+
+			case 'Sepcies':
+				return 0xD0F8AB; // Light Lime	
+
+			case 'Planet':
+				return 0xCDB465; // Tan	
+
+			case 'Weapon':
+				return 0xA5111A; // Red
+
+			case 'Vehicle':
+				return 0xFFFF00; // Yellow
+
+			case 'Starship':
+				return 0x9900CC; // Purple
+
+			case 'Tool':
+				return 0x663300 // Brown	
+
+			default:
+				return 0xEBA071; // Salmon
+		}
+	}
+	
 	function isLinkMapped(idA, idB) {
 
 		let key = idA < idB ? idA + '-' + idB : idB + '-' + idA;
