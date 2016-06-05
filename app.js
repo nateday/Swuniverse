@@ -3,6 +3,7 @@
 	let graph = require('ngraph.graph')();
 	let renderGraph = require('ngraph.pixel');
 	let _ = require('lodash');
+	let plate = require('plate');
 
 	let swSata = {};
 	let itemNames = {};
@@ -33,6 +34,7 @@
 		});
 
 		let renderer = renderGraph(graph, {
+			container: document.getElementById('graph'),
 			physics: physics,
 			node: createNodeUI,
 			link: createLinkUI
@@ -40,7 +42,18 @@
 
 		renderer.on('nodeclick', function (node) {
 			console.log(node);
+
+			let source = $('#infoTemplate').text();			
+			let template = new plate.Template(source);
+			
 			renderer.showNode(node.id, 30);
+
+			template.render(node.data, function (err, html) {
+				
+				let info = $('#info');
+				
+				info.html(html);
+			});
 		});
 	});
 
