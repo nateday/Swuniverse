@@ -7,7 +7,8 @@
     "lodash": "^4.13.1",
     "ngraph.events": "0.0.4",
     "ngraph.graph": "0.0.12",
-    "ngraph.pixel": "^2.1.0"
+    "ngraph.pixel": "^2.1.0",
+    "plate": "^1.4.4"
   },
   "devDependencies": {},
   "scripts": {
