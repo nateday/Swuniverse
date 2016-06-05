@@ -1,0 +1,26 @@
+{
+  "name": "swuniverse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "ngraph.events": "0.0.4",
+    "ngraph.graph": "0.0.12",
+    "ngraph.pixel": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nateday/Swuniverse.git"
+  },
+  "author": "Nathan Day",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nateday/Swuniverse/issues"
+  },
+  "homepage": "https://github.com/nateday/Swuniverse#readme"
+}
