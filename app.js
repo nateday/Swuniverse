@@ -2,7 +2,10 @@
 
 	let graph = require('ngraph.graph')();
 	let renderGraph = require('ngraph.pixel');
+	let _ = require('lodash');
 
+	let swSata = {};
+	let itemNames = {};
 	let linkKeys = {};
 
 	let physics = {
@@ -15,11 +18,13 @@
 
 	getJson(function (json) {
 
+		swData = json;
+		
 		//console.log('Json: ', json);
 
 		json.forEach(function (item) {
 			//console.log('Item: ', item);
-			graph.addNode(item.id, item);
+			graph.addNode(getItemName(item.id), item);
 
 			mapAffiliations(item, item.affiliations);
 			mapFilms(item, item.films);
@@ -32,6 +37,11 @@
 			node: createNodeUI,
 			link: createLinkUI
 		});
+
+		renderer.on('nodeclick', function (node) {
+			console.log(node);
+			renderer.showNode(node.id, 30);
+		});
 	});
 
 	function mapAffiliations(item, affiliations) {
@@ -39,7 +49,11 @@
 		if (affiliations) {
 			affiliations.forEach(function (affiliationId) {
 				if (!isLinkMapped(item.id, affiliationId)) {
-					graph.addLink(item.id, affiliationId);
+
+					let itemName = getItemName(item.id);
+					let affiliationName = getItemName(affiliationId);
+
+					graph.addLink(itemName, affiliationName, { from: item.type, to: 'Affiliation' });
 				}
 			});
 		}
@@ -50,7 +64,11 @@
 		if (films) {
 			films.forEach(function (filmId) {
 				if (!isLinkMapped(item.id, filmId)) {
-					graph.addLink(item.id, filmId);
+
+					let itemName = getItemName(item.id);
+					let filmName = getItemName(filmId);
+
+					graph.addLink(itemName, filmName, { from: item.type, to: 'Film' });
 				}
 			});
 		}
@@ -61,7 +79,11 @@
 		if (weapons) {
 			weapons.forEach(function (weaponId) {
 				if (!isLinkMapped(item.id, weaponId)) {
-					graph.addLink(item.id, weaponId);
+
+					let itemName = getItemName(item.id);
+					let weaponName = getItemName(weaponId);
+
+					graph.addLink(itemName, weaponName, { from: item.type, to: 'Weapon' });
 				}
 			});
 		}
@@ -72,7 +94,11 @@
 		if (tools) {
 			tools.forEach(function (toolId) {
 				if (!isLinkMapped(item.id, toolId)) {
-					graph.addLink(item.id, toolId);
+
+					let itemName = getItemName(item.id);
+					let toolName = getItemName(toolId);
+
+					graph.addLink(itemName, toolName, { from: item.type, to: 'Tool' });
 				}
 			});
 		}
@@ -83,7 +109,11 @@
 		if (vehicles) {
 			vehicles.forEach(function (vehicleId) {
 				if (!isLinkMapped(item.id, vehicleId)) {
-					graph.addLink(item.id, vehicleId);
+
+					let itemName = getItemName(item.id);
+					let vehicleName = getItemName(vehicleId);
+
+					graph.addLink(itemName, vehicleName, { from: item.type, to: 'Vehicle' });
 				}
 			});
 		}
@@ -94,7 +124,11 @@
 		if (starships) {
 			starships.forEach(function (starshipId) {
 				if (!isLinkMapped(item.id, starshipId)) {
-					graph.addLink(item.id, starshipId);
+
+					let itemName = getItemName(item.id);
+					let starshipName = getItemName(starshipId);
+
+					graph.addLink(itemName, starshipName, { from: item.type, to: 'Starship' });
 				}
 			});
 		}
@@ -105,7 +139,11 @@
 		if (species) {
 			species.forEach(function (speciesId) {
 				if (!isLinkMapped(item.id, speciesId)) {
-					graph.addLink(item.id, speciesId);
+
+					let itemName = getItemName(item.id);
+					let speciesName = getItemName(speciesId);
+
+					graph.addLink(itemName, speciesName, { from: item.type, to: 'Species' });
 				}
 			});
 		}
@@ -116,9 +154,34 @@
 		if (droids) {
 			droids.forEach(function (droidId) {
 				if (!isLinkMapped(item.id, droidId)) {
-					graph.addLink(item.id, droidId);
+
+					let itemName = getItemName(item.id);
+					let droidName = getItemName(droidId);
+
+					graph.addLink(itemName, droidName, { from: item.type, to: 'Droid' });
 				}
 			});
+		}
+	}
+
+	function getItemName(itemId) {
+
+		if (itemNames[itemId]) {
+			return itemNames[itemId];
+		}
+		else {
+			let swItem = _.find(swData, function (item) {
+				return item.id === itemId;
+			})
+
+			if (swItem) {
+				itemNames[itemId] = swItem.name || swItem.id;
+			}
+			else {
+				itemNames[itemId] = itemId;
+			}
+
+			return itemNames[itemId];
 		}
 	}
 
