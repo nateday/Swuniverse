@@ -2,30 +2,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>3D Test</title>
+	<title>Swuniverse</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<style>
-		body {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			overflow: hidden;
-			padding: 0;
-			margin: 0;
-		}
-		
-		#graph {
-			height: 100%;
-			width: 100%;
-		}
-		
-		#info {
-			position: absolute;
-			right: 20px;
-			top: 40px;
-			width: 350px;
-		}
-	</style>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -33,21 +15,34 @@
 		<div id="graph"></div>
 	</div>
 	<div id="info"></div>
-	
+
 	<script type="text/html" id="infoTemplate">
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="thumbnail">
+				<div class="thumbnail page-layout animated bounceInRight">
+					<audio controls autoplay>
+  					<source src="audio/light-saber.ogg" type="audio/ogg">
+  					<source src="audio/light-saber.mp3" type="audio/mpeg">
+ 					 Your browser does not support the audio element.
+					</audio>
 					<img src="{{ image }}" alt="{{ name }}">
 					<div class="caption">
 						<h3>{{ name }}</h3>
+						<div class="lightsaber animated22 bounceInRight"></div>
+						<div class="lightsaber animated24 bounceInRight"></div>
+						<div class="lightsaber animated26 bounceInRight"></div>
+
+						<!--<div class="lightsaber bounceInRight"></div>
+						<div class="lightsaber bounceInRight"></div>
+						<div class="lightsaber bounceInRight"></div>-->
+						<br>
 						<p>{{ description }}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</script>
-	
+
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="bundle.js"></script>
 </body>

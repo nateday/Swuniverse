@@ -11,7 +11,7 @@
 
 	let physics = {
 		springLength: 100,
-		springCoeff: 0.0002,
+		springCoeff: 0.0001,
 		gravity: -0.5,
 		theta: 0.2,
 		dragCoeff: 0.02
@@ -283,7 +283,7 @@
 
 		switch (type) {
 			case 'Film':
-				return 0x016280; // Blue
+				return 0x286090; // Blue
 
 			case 'Character':
 				return 0x3E9D33; // Light Green
@@ -298,13 +298,13 @@
 				return 0xCDB465; // Tan	
 
 			case 'Weapon':
-				return 0xA5111A; // Red
+				return 0xC9302C; // Red
 
 			case 'Vehicle':
 				return 0xFFFF00; // Yellow
 
 			case 'Starship':
-				return 0x9900CC; // Purple
+				return 0x8d23a3; // Purple
 
 			case 'Tool':
 				return 0x663300 // Brown	
