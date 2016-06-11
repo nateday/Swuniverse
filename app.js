@@ -20,7 +20,7 @@
 	getJson(function (json) {
 
 		swData = json;
-		
+
 		//console.log('Json: ', json);
 
 		json.forEach(function (item) {
@@ -43,15 +43,15 @@
 		renderer.on('nodeclick', function (node) {
 			console.log(node);
 
-			let source = $('#infoTemplate').text();			
+			let source = $('#infoTemplate').text();
 			let template = new plate.Template(source);
-			
+
 			renderer.showNode(node.id, 30);
 
 			template.render(node.data, function (err, html) {
-				
+
 				let info = $('#info');
-				
+
 				info.html(html);
 			});
 		});
@@ -199,7 +199,7 @@
 	}
 
 	function createNodeUI(node) {
-		
+
 		//console.log('Node: ', node);
 
 		let type = node.data ? node.data.type : 'Item';
@@ -260,6 +260,12 @@
 					size: 15
 				};
 
+			case 'Droid':
+				return {
+					color: color,
+					size: 15
+				};
+
 			default:
 				return {
 					color: color,
@@ -269,7 +275,7 @@
 	}
 
 	function createLinkUI(link) {
-		
+
 		let fromColor = getTypeColor(link.data.from);
 		let toColor = getTypeColor(link.data.to);
 
@@ -291,7 +297,7 @@
 			case 'Affiliation':
 				return 0x1C5423; // Dark Green	
 
-			case 'Sepcies':
+			case 'Species':
 				return 0xD0F8AB; // Light Lime	
 
 			case 'Planet':
@@ -307,13 +313,16 @@
 				return 0x8d23a3; // Purple
 
 			case 'Tool':
-				return 0x663300 // Brown	
+				return 0x663300 // Brown
+
+			case 'Droid':
+				return 0xFFA500 // Orange		
 
 			default:
 				return 0xEBA071; // Salmon
 		}
 	}
-	
+
 	function isLinkMapped(idA, idB) {
 
 		let key = idA < idB ? idA + '-' + idB : idB + '-' + idA;
