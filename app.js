@@ -47,8 +47,7 @@
 		});
 
 		renderer.on('nodeclick', function (node) {
-			console.log(node);
-
+			console.log(node);	
 			let source = $('#infoTemplate').text();
 			let template = new plate.Template(source);
 
