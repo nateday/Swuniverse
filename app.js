@@ -27,10 +27,16 @@
 			//console.log('Item: ', item);
 			graph.addNode(getItemName(item.id), item);
 
-			mapAffiliations(item, item.affiliations);
+			mapOrganizations(item, item.organizations);
 			mapFilms(item, item.films);
-			mapWeapons(item, item.weapons);
-			mapTools(item, item.tools);
+			mapTechnology(item, item.technology);
+			mapCharacters(item, item.characters);
+			mapDroids(item, item.droids);
+			mapCreatures(item, item.creatures);
+			mapLocations(item, item.locations);
+			mapSpecies(item, item.species);
+			mapVehicles(item, item.vehicles);
+			
 		});
 
 		let renderer = renderGraph(graph, {
@@ -57,16 +63,31 @@
 		});
 	});
 
-	function mapAffiliations(item, affiliations) {
+	function mapOrganizations(item, organization) {
 
-		if (affiliations) {
-			affiliations.forEach(function (affiliationId) {
-				if (!isLinkMapped(item.id, affiliationId)) {
+		if (organization) {
+			organization.forEach(function (organizationId) {
+				if (!isLinkMapped(item.id, organizationId)) {
 
 					let itemName = getItemName(item.id);
-					let affiliationName = getItemName(affiliationId);
+					let organizationName = getItemName(organizationId);
 
-					graph.addLink(itemName, affiliationName, { from: item.type, to: 'Affiliation' });
+					graph.addLink(itemName, organizationName, { from: item.type, to: 'Organization' });
+				}
+			});
+		}
+	}
+
+	function mapLocations(item, locations) {
+
+		if (locations) {
+			locations.forEach(function (locationId) {
+				if (!isLinkMapped(item.id, locationId)) {
+
+					let itemName = getItemName(item.id);
+					let locationName = getItemName(locationId);
+
+					graph.addLink(itemName, locationName, { from: item.type, to: 'Location' });
 				}
 			});
 		}
@@ -87,37 +108,52 @@
 		}
 	}
 
-	function mapWeapons(item, weapons) {
+	function mapTechnology(item, technology) {
 
-		if (weapons) {
-			weapons.forEach(function (weaponId) {
-				if (!isLinkMapped(item.id, weaponId)) {
+		if (technology) {
+			technology.forEach(function (technologyId) {
+				if (!isLinkMapped(item.id, technologyId)) {
 
 					let itemName = getItemName(item.id);
-					let weaponName = getItemName(weaponId);
+					let technologyName = getItemName(technologyId);
 
-					graph.addLink(itemName, weaponName, { from: item.type, to: 'Weapon' });
+					graph.addLink(itemName, technologyName, { from: item.type, to: 'Technology' });
 				}
 			});
 		}
 	}
 
-	function mapTools(item, tools) {
+	function mapCharacters(item, characters) {
 
-		if (tools) {
-			tools.forEach(function (toolId) {
-				if (!isLinkMapped(item.id, toolId)) {
+		if (characters) {
+			characters.forEach(function (characterId) {
+				if (!isLinkMapped(item.id, characterId)) {
 
 					let itemName = getItemName(item.id);
-					let toolName = getItemName(toolId);
+					let characterName = getItemName(characterId);
 
-					graph.addLink(itemName, toolName, { from: item.type, to: 'Tool' });
+					graph.addLink(itemName, characterName, { from: item.type, to: 'Character' });
 				}
 			});
 		}
 	}
 
-	function mapVehicles(item, tools) {
+	function mapCreatures(item, creatures) {
+
+		if (creatures) {
+			creatures.forEach(function (creatureId) {
+				if (!isLinkMapped(item.id, creatureId)) {
+
+					let itemName = getItemName(item.id);
+					let creatureName = getItemName(creatureId);
+
+					graph.addLink(itemName, creatureName, { from: item.type, to: 'Creature' });
+				}
+			});
+		}
+	}
+
+	function mapVehicles(item, vehicles) {
 
 		if (vehicles) {
 			vehicles.forEach(function (vehicleId) {
@@ -132,22 +168,7 @@
 		}
 	}
 
-	function mapStarships(item, tools) {
-
-		if (starships) {
-			starships.forEach(function (starshipId) {
-				if (!isLinkMapped(item.id, starshipId)) {
-
-					let itemName = getItemName(item.id);
-					let starshipName = getItemName(starshipId);
-
-					graph.addLink(itemName, starshipName, { from: item.type, to: 'Starship' });
-				}
-			});
-		}
-	}
-
-	function mapSpecies(item, tools) {
+	function mapSpecies(item, species) {
 
 		if (species) {
 			species.forEach(function (speciesId) {
@@ -162,7 +183,7 @@
 		}
 	}
 
-	function mapDroids(item, tools) {
+	function mapDroids(item, droids) {
 
 		if (droids) {
 			droids.forEach(function (droidId) {
@@ -212,7 +233,7 @@
 					size: 30
 				};
 
-			case 'Planet':
+			case 'Location':
 				return {
 					color: color,
 					size: 30
@@ -224,7 +245,7 @@
 					size: 50
 				};
 
-			case 'Weapon':
+			case 'Technology':
 				return {
 					color: color,
 					size: 15
@@ -236,16 +257,10 @@
 					size: 25
 				};
 
-			case 'Starship':
+			case 'Creature':
 				return {
 					color: color,
 					size: 25
-				};
-
-			case 'Tool':
-				return {
-					color: color,
-					size: 15
 				};
 
 			case 'Species':
@@ -254,7 +269,7 @@
 					size: 15
 				};
 
-			case 'Affiliation':
+			case 'Organization':
 				return {
 					color: color,
 					size: 15
@@ -294,26 +309,23 @@
 			case 'Character':
 				return 0x3E9D33; // Light Green
 
-			case 'Affiliation':
+			case 'Organization':
 				return 0x1C5423; // Dark Green	
 
 			case 'Species':
 				return 0xD0F8AB; // Light Lime	
 
-			case 'Planet':
+			case 'Location':
 				return 0xCDB465; // Tan	
 
-			case 'Weapon':
+			case 'Technology':
 				return 0xC9302C; // Red
 
 			case 'Vehicle':
 				return 0xFFFF00; // Yellow
 
-			case 'Starship':
+			case 'Creature':
 				return 0x8d23a3; // Purple
-
-			case 'Tool':
-				return 0x663300 // Brown
 
 			case 'Droid':
 				return 0xFFA500 // Orange		
