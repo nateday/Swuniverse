@@ -27,10 +27,9 @@
 			//console.log('Item: ', item);
 			graph.addNode(getItemName(item.id), item);
 
-			mapAffiliations(item, item.affiliations);
+			mapOrganizations(item, item.organizations);
 			mapFilms(item, item.films);
-			mapWeapons(item, item.weapons);
-			mapTools(item, item.tools);
+			mapTechnologies(item, item.technology);
 		});
 
 		let renderer = renderGraph(graph, {
@@ -56,16 +55,16 @@
 		});
 	});
 
-	function mapAffiliations(item, affiliations) {
+	function mapOrganizations(item, organization) {
 
-		if (affiliations) {
-			affiliations.forEach(function (affiliationId) {
-				if (!isLinkMapped(item.id, affiliationId)) {
+		if (organization) {
+			organization.forEach(function (organizationId) {
+				if (!isLinkMapped(item.id, organizationId)) {
 
 					let itemName = getItemName(item.id);
-					let affiliationName = getItemName(affiliationId);
+					let organizationName = getItemName(organizationId);
 
-					graph.addLink(itemName, affiliationName, { from: item.type, to: 'Affiliation' });
+					graph.addLink(itemName, organizationName, { from: item.type, to: 'Organization' });
 				}
 			});
 		}
@@ -86,31 +85,16 @@
 		}
 	}
 
-	function mapWeapons(item, weapons) {
+	function mapTechnologies(item, technology) {
 
-		if (weapons) {
-			weapons.forEach(function (weaponId) {
-				if (!isLinkMapped(item.id, weaponId)) {
-
-					let itemName = getItemName(item.id);
-					let weaponName = getItemName(weaponId);
-
-					graph.addLink(itemName, weaponName, { from: item.type, to: 'Weapon' });
-				}
-			});
-		}
-	}
-
-	function mapTools(item, tools) {
-
-		if (tools) {
-			tools.forEach(function (toolId) {
-				if (!isLinkMapped(item.id, toolId)) {
+		if (technology) {
+			technology.forEach(function (technologyId) {
+				if (!isLinkMapped(item.id, technologyId)) {
 
 					let itemName = getItemName(item.id);
-					let toolName = getItemName(toolId);
+					let technologyName = getItemName(technologyId);
 
-					graph.addLink(itemName, toolName, { from: item.type, to: 'Tool' });
+					graph.addLink(itemName, technologyName, { from: item.type, to: 'Technology' });
 				}
 			});
 		}
@@ -126,21 +110,6 @@
 					let vehicleName = getItemName(vehicleId);
 
 					graph.addLink(itemName, vehicleName, { from: item.type, to: 'Vehicle' });
-				}
-			});
-		}
-	}
-
-	function mapStarships(item, tools) {
-
-		if (starships) {
-			starships.forEach(function (starshipId) {
-				if (!isLinkMapped(item.id, starshipId)) {
-
-					let itemName = getItemName(item.id);
-					let starshipName = getItemName(starshipId);
-
-					graph.addLink(itemName, starshipName, { from: item.type, to: 'Starship' });
 				}
 			});
 		}
@@ -211,7 +180,7 @@
 					size: 30
 				};
 
-			case 'Planet':
+			case 'Location':
 				return {
 					color: color,
 					size: 30
@@ -223,7 +192,7 @@
 					size: 50
 				};
 
-			case 'Weapon':
+			case 'Technology':
 				return {
 					color: color,
 					size: 15
@@ -235,25 +204,13 @@
 					size: 25
 				};
 
-			case 'Starship':
-				return {
-					color: color,
-					size: 25
-				};
-
-			case 'Tool':
-				return {
-					color: color,
-					size: 15
-				};
-
 			case 'Species':
 				return {
 					color: color,
 					size: 15
 				};
 
-			case 'Affiliation':
+			case 'Organization':
 				return {
 					color: color,
 					size: 15
@@ -293,26 +250,20 @@
 			case 'Character':
 				return 0x3E9D33; // Light Green
 
-			case 'Affiliation':
+			case 'Organization':
 				return 0x1C5423; // Dark Green	
 
 			case 'Species':
 				return 0xD0F8AB; // Light Lime	
 
 			case 'Planet':
-				return 0xCDB465; // Tan	
+				return 0xCDB465; // Tan
 
-			case 'Weapon':
+			case 'Technology':
 				return 0xC9302C; // Red
 
 			case 'Vehicle':
 				return 0xFFFF00; // Yellow
-
-			case 'Starship':
-				return 0x8d23a3; // Purple
-
-			case 'Tool':
-				return 0x663300 // Brown
 
 			case 'Droid':
 				return 0xFFA500 // Orange		
