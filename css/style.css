@@ -1,53 +1,149 @@
-		body {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			overflow: hidden;
-			padding: 0;
-			margin: 0;
-			font-family: 'Raleway', sans-serif;
-		}
-		audio {
-            display: none;
-        }
-		#graph {
-			height: 100%;
-			width: 100%;
-		}
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+a{
+	text-decoration: none !important; 
+	cursor: pointer;
+}
+audio {
+	display: none;
+}
+i {
+	color: #C9302C;
+}
+img {
+	border-radius: 5px;
+}
+#graph {
+	height: 100%;
+	width: 100%;
+}
+#info {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	width: 350px;
+}
+.page-layout {
+	border: none;
+	text-align: center;
+	padding-top: 20px;
+	padding: 20px 10px 0 20px;
+	border-radius: 10px;
+	-webkit-filter: drop-shadow(0px 0px 20px #FFE81F);
+	filter: drop-shadow(0px 0px 20px #FFE81F);
+	height: 500px;
+	overflow: auto;
+	/*background: linear-gradient(to bottom right, #111, #444);
+	background: -webkit-linear-gradient(to bottom right, #111, #444);
+	background: -o-linear-gradient(to bottom right, #111, #444);
+	background: -moz-linear-gradient(to bottom right, #111, #444);*/
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	opacity: .93;
+}
+.page-layout h3,p {
+	color: white;
+}
+.page-layout h3 {
+	text-transform: uppercase;
+}
+.remove-box {
+	font-size: 1.8em;
+	border: 2px solid #C9302C;
+	color: #C9302C;
+	padding: 5px;
+	margin: 0 40px;
+	border-radius: 10px;
+	/*box-shadow: 0 0 30px #C9302C;
+	text-shadow: 0 0 20px #C9302C;*/
+	text-transform: uppercase;
+	-webkit-animation: glow 1.5s ease-in-out infinite alternate;
+}
+.remove-box:hover {
+	background-color:  #C9302C;
+	color: white;
+	text-shadow: 0 0 20px white;
+}
+.lightsaber {
+	margin: 6px 80px;
+	border-bottom: 5px solid white;
+	border-radius: 2px;
+	box-shadow: 0 0 20px #FFE81F;
+}
+
+@-webkit-keyframes glow {
+from {
+	box-shadow: 0 0 70px #C9302C, 0 0 80px #C9302C;
+	text-shadow: 0 0 70px #C9302C, 0 0 80px #C9302C;
+}
+to {
+	box-shadow: 0 0 40px #C9302C;
+	text-shadow: 0 0 40px #C9302C;
+}
+}
+
+
+/*Scroll-Bar*/
+::-webkit-scrollbar {
+	width: 12px;
+	
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(255, 232, 255, .5);
+	padding-left: 10px; 
+}
+
+/*Node Color*/
+.node-blue {
+	-webkit-filter: drop-shadow(0px 0px 20px #286090);
+	filter: drop-shadow(0px 0px 20px #286090);
+}
+.node-light-green {
+	-webkit-filter: drop-shadow(0px 0px 20px #3E9D33);
+	filter: drop-shadow(0px 0px 20px #3E9D33);
+}
+.node-dark-green {
+	-webkit-filter: drop-shadow(0px 0px 20px #1C5423);
+	filter: drop-shadow(0px 0px 20px #1C5423);
+}
+.node-light-lime{
+	-webkit-filter: drop-shadow(0px 0px 20px #D0F8AB);
+	filter: drop-shadow(0px 0px 20px #D0F8AB);
+}
+.node-tan {
+	-webkit-filter: drop-shadow(0px 0px 20px #CDB465);
+	filter: drop-shadow(0px 0px 20px #CDB465);
+}
+.node-red {
+	-webkit-filter: drop-shadow(0px 0px 20px #C9302C);
+	filter: drop-shadow(0px 0px 20px #C9302C);
+}
+.node-yellow {
+	-webkit-filter: drop-shadow(0px 0px 20px #FFFF00);
+	filter: drop-shadow(0px 0px 20px #FFFF00);
+}
+.node-purple {
+	-webkit-filter: drop-shadow(0px 0px 20px #8d23a3);
+	filter: drop-shadow(0px 0px 20px #8d23a3);
+}
+.node-brown {
+	-webkit-filter: drop-shadow(0px 0px 20px #663300);
+	filter: drop-shadow(0px 0px 20px #663300);
+}
+.node-salmon {
+	-webkit-filter: drop-shadow(0px 0px 20px #EBA071);
+	filter: drop-shadow(0px 0px 20px #EBA071);
+}
+
 		
-		#info {
-			position: absolute;
-			right: 20px;
-			top: 40px;
-			width: 350px;
-		}
-		
-		.page-layout {
-			border: none;
-			opacity: .94;
-			text-align: center;
-			padding-top: 20px;
-			border-radius: 10px;
-			-webkit-filter: drop-shadow(0px 0px 20px #FFE600);
-			filter: drop-shadow(0px 0px 20px #FFE600);
-			height: 500px;
-			overflow-y: scroll;
-			background: linear-gradient(to bottom right, #111, #444);
-			background: -webkit-linear-gradient(to bottom right, #111, #444);
-			background: -o-linear-gradient(to bottom right, #111, #444);
-			background: -moz-linear-gradient(to bottom right, #111, #444);
-		}
-		.page-layout h3,p {
-			color: white;
-		}
-		
-		.page-layout h3 {
-			text-transform: uppercase;
-		}
-		
-		.lightsaber {
-			margin: 6px 80px;
-			border-bottom: 5px solid white;
-			box-shadow: 0 0 20px #FFE600;
-			border-radius: 2px;
-		}
+	

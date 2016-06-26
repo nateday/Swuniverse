@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Swuniverse</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -18,23 +20,20 @@
 
 	<script type="text/html" id="infoTemplate">
 		<div class="row">
-			<div class="col-sm-12">
-				<div class="thumbnail page-layout animated bounceInRight">
+			<div class="col-sm-12" id="hide-cards">
+				<div class="thumbnail page-layout animated bounceInRight" id="card">
 					<audio controls autoplay>
-  					<source src="audio/light-saber.ogg" type="audio/ogg">
-  					<source src="audio/light-saber.mp3" type="audio/mpeg">
- 					 Your browser does not support the audio element.
+						<source src="audio/light-saber.ogg" type="audio/ogg">
+						<source src="audio/light-saber.mp3" type="audio/mpeg">
 					</audio>
+					<a><p class="remove-box" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<br>
 					<img src="{{ image }}" alt="{{ name }}">
 					<div class="caption">
 						<h3>{{ name }}</h3>
 						<div class="lightsaber animated22 bounceInRight"></div>
 						<div class="lightsaber animated24 bounceInRight"></div>
 						<div class="lightsaber animated26 bounceInRight"></div>
-
-						<!--<div class="lightsaber bounceInRight"></div>
-						<div class="lightsaber bounceInRight"></div>
-						<div class="lightsaber bounceInRight"></div>-->
 						<br>
 						<p>{{ description }}</p>
 					</div>
@@ -43,8 +42,14 @@
 		</div>
 	</script>
 
+
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="bundle.js"></script>
+	<script src="util.js"></script>
+	<audio controls autoplay>
+		<source src="audio/theme.ogg" type="audio/ogg">
+		<source src="audio/theme.mp3" type="audio/mpeg">
+	</audio>
 </body>
 
 </html>
