@@ -20,15 +20,41 @@
 
 	<div id="info"></div>
 	<div id="feedback"></div>
+	<div id="legend"></div>
+
+	<button type="button" class="btn btn-small" id="legendButton">
+		Legend
+	</button>
+
+	<script type="text/html" id="legendTemplate">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="thumbnail page-layout animated bounceInLeft" id="legendCard">
+					<h2>Legend</h2>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: blue;"></i> Films</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #3E9D33;"></i> Characters</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: purple;"></i> Creatures</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: orange;"></i> Droids</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #D0F8AB;"></i> Species</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #1C5423;"></i> Organizations</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #663300;"></i> Locations</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: red;"></i> Technology</p>
+					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: yellow;"></i> Vehicles</p>
+					<button type="button" class="btn btn-small btn-danger" id="closeLegend">Close</button>
+				</div>
+			</div>
+		</div>
+	</script>
 
 	<button type="button" class="btn btn-small" id="feedbackButton">
 		Feedback
 	</button>
 
-	<script class="modal fade" type="text/html" id="feedbackTemplate">
+	<script type="text/html" id="feedbackTemplate">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="thumbnail page-layout animated bounceInRight" id="feedbackCard">
+					<h2>Feedback</h2>
 					<form class="form">
 						<div class="form-group">
 							<label for="Subject">Subject</label>

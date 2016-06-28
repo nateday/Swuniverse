@@ -43,6 +43,18 @@ img {
 	bottom: 20px;
 	opacity: .7;
 }
+#legend {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	width: 350px;
+}
+#legendButton {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	opacity: .7;
+}
 .page-layout {
 	border: none;
 	text-align: center;

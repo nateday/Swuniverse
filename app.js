@@ -53,6 +53,7 @@
 			// let template = new plate.Template(source);
 
 			closeFeedbackCard();
+			closeLegendCard();
 			
 			let template = getTypeTemplate(node.data.type);
 
@@ -85,6 +86,7 @@
 		var template = new plate.Template(source);
 
 		closeCard();
+		closeLegendCard();
 
         template.render({}, function (err, html) {
 
@@ -95,6 +97,24 @@
     $('body').on('click', '#closeFeedback', function() {
 		closeFeedbackCard();
     });
+
+	$('#legendButton').on('click', function() {
+
+		var source = $('#legendTemplate').text();
+		var template = new plate.Template(source);
+
+		closeCard();
+		closeFeedbackCard();
+
+		template.render({}, function (err, html) {
+
+			$('#legend').html(html);
+		});
+	});
+
+	$('body').on('click', '#closeLegend', function() {
+		closeLegendCard();
+	});
 
 	function mapOrganizations(item, organization) {
 
@@ -544,6 +564,22 @@
             feedback.removeClass('bounceOutRight');
 
         }, 700);
+
+	}
+
+	function closeLegendCard() {
+
+		var legend = $('#legendCard');
+
+		legend.removeClass('bounceInLeft');
+		legend.addClass('bounceOutLeft');
+		setTimeout(function () {
+
+			legend.hide();
+			legend.addClass('bounceInLeft');
+			legend.removeClass('bounceOutLeft');
+
+		}, 700);
 
 	}
 
