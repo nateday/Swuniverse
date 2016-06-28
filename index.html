@@ -18,15 +18,15 @@
 	</div>
 	<div id="info"></div>
 
-	<script type="text/html" id="infoTemplate">
+	<script type="text/html" id="infoFilmOrgTemplate">
 		<div class="row">
 			<div class="col-sm-12" id="hide-cards">
-				<div class="thumbnail page-layout animated bounceInRight" id="card">
+				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
 					<audio controls autoplay>
 						<source src="audio/light-saber.ogg" type="audio/ogg">
 						<source src="audio/light-saber.mp3" type="audio/mpeg">
 					</audio>
-					<a><p class="remove-box" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
 					<br>
 					<img src="{{ image }}" alt="{{ name }}">
 					<div class="caption">
@@ -42,6 +42,82 @@
 		</div>
 	</script>
 
+	<script type="text/html" id="infoCharacterTemplate">
+		<div class="row">
+			<div class="col-sm-12" id="hide-cards">
+				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
+					<audio controls autoplay>
+						<source src="audio/light-saber.ogg" type="audio/ogg">
+						<source src="audio/light-saber.mp3" type="audio/mpeg">
+					</audio>
+					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<br>
+					<img src="{{ image }}" alt="{{ name }}">
+					<div class="caption">
+						<h3>{{ name }}</h3>
+						<div class="lightsaber animated22 bounceInRight"></div>
+						<div class="lightsaber animated24 bounceInRight"></div>
+						<div class="lightsaber animated26 bounceInRight"></div>
+						<br>
+						<p>{{ description }}</p>
+						<p>Gender: {{ gender }}</p>
+						<p>Dimensions: {{ dimensions }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/html" id="infoLocationTemplate">
+		<div class="row">
+			<div class="col-sm-12" id="hide-cards">
+				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
+					<audio controls autoplay>
+						<source src="audio/light-saber.ogg" type="audio/ogg">
+						<source src="audio/light-saber.mp3" type="audio/mpeg">
+					</audio>
+					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<br>
+					<img src="{{ image }}" alt="{{ name }}">
+					<div class="caption">
+						<h3>{{ name }}</h3>
+						<div class="lightsaber animated22 bounceInRight"></div>
+						<div class="lightsaber animated24 bounceInRight"></div>
+						<div class="lightsaber animated26 bounceInRight"></div>
+						<br>
+						<p>{{ description }}</p>
+						<p>Climate: {{ climate }}</p>
+						<p>Terrain: {{ terrain }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/html" id="infoTemplate">
+		<div class="row">
+			<div class="col-sm-12" id="hide-cards">
+				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
+					<audio controls autoplay>
+						<source src="audio/light-saber.ogg" type="audio/ogg">
+						<source src="audio/light-saber.mp3" type="audio/mpeg">
+					</audio>
+					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<br>
+					<img src="{{ image }}" alt="{{ name }}">
+					<div class="caption">
+						<h3>{{ name }}</h3>
+						<div class="lightsaber animated22 bounceInRight"></div>
+						<div class="lightsaber animated24 bounceInRight"></div>
+						<div class="lightsaber animated26 bounceInRight"></div>
+						<br>
+						<p>{{ description }}</p>
+						<p>Dimensions: {{ dimension }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="bundle.js"></script>

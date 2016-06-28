@@ -17,7 +17,7 @@
 		dragCoeff: 0.02
 	};
 
-	getJson(function (json) {
+	$.get('/data.json', function(json) {
 
 		swData = json;
 
@@ -48,10 +48,19 @@
 
 		renderer.on('nodeclick', function (node) {
 			console.log(node);	
-			let source = $('#infoTemplate').text();
-			let template = new plate.Template(source);
+
+			// let source = $('#infoTemplate').text();
+			// let template = new plate.Template(source);
+			
+			let template = getTypeTemplate(node.data.type);
 
 			renderer.showNode(node.id, 30);
+
+			node.data.typeClass = getTypeClass(node.data.type);
+
+			node.data.boxColor = getBoxColor(node.data.type);
+
+			node.data.boltColor = getBoltColor(node.data.type);
 
 			template.render(node.data, function (err, html) {
 
@@ -315,7 +324,7 @@
 				return 0xD0F8AB; // Light Lime	
 
 			case 'Location':
-				return 0xCDB465; // Tan	
+				return 0x663300; // Brown	
 
 			case 'Technology':
 				return 0xC9302C; // Red
@@ -334,6 +343,179 @@
 		}
 	}
 
+	// function getGlowColor(type) {
+
+	// 	switch (type) {
+	// 		case 'Film':
+	// 			return 'glow-blue';
+
+	// 		case 'Character':
+	// 			return 'glow-light-green';
+
+	// 		case 'Organization':
+	// 			return 'glow-dark-green';
+
+	// 		case 'Species':
+	// 			return 'glow-light-lime';
+
+	// 		case 'Location':
+	// 			return 'glow-brown';
+
+	// 		case 'Technology':
+	// 			return 'glow-red';
+
+	// 		case 'Vehicle':
+	// 			return 'glow-yellow';
+
+	// 		case 'Creature':
+	// 			return 'glow-pruple';
+
+	// 		case 'Droid':
+	// 			return 'glow-orange';
+
+	// 		default:
+	// 			return 'glow-salmon';
+	// 	}
+
+	// }
+
+	function getTypeClass(type) {
+
+		switch (type) {
+			case 'Film':
+				return 'node-blue'; // Blue
+
+			case 'Character':
+				return 'node-light-green'; // Light Green
+
+			case 'Organization':
+				return 'node-dark-green'; // Dark Green	
+
+			case 'Species':
+				return 'node-light-lime'; // Light Lime	
+
+			case 'Location':
+				return 'node-brown'; // Brown	
+
+			case 'Technology':
+				return 'node-red'; // Red
+
+			case 'Vehicle':
+				return 'node-yellow'; // Yellow
+
+			case 'Creature':
+				return 'node-purple'; // Purple
+
+			case 'Droid':
+				return 'node-orange'; // Orange		
+
+			 default:
+			 	return 'node-salmon'; // Salmon
+		}
+
+	}
+
+	function getBoxColor(type) {
+
+		switch (type) {
+			case 'Film':
+				return 'box-blue box-blue:hover glow-blue'; // Blue
+
+			case 'Character':
+				return 'box-light-green box-light-green:hover glow-light-green'; // Light Green
+
+			case 'Organization':
+				return 'box-dark-green box-dark-green:hover glow-dark-green'; // Dark Green	
+
+			case 'Species':
+				return 'box-light-lime box-light-lime:hover glow-light-lime'; // Light Lime	
+
+			case 'Location':
+				return 'box-brown box-brown:hover glow-brown'; // Brown	
+
+			case 'Technology':
+				return 'box-red box-red:hover glow-red'; // Red
+
+			case 'Vehicle':
+				return 'box-yellow box-yellow:hover glow-yellow'; // Yellow
+
+			case 'Creature':
+				return 'box-purple box-purple:hover glow-purple'; // Purple
+
+			case 'Droid':
+				return 'box-orange box-orange:hover glow-orange'; // Orange		
+
+			 default:
+			 	return 'box-salmon box-salmon:hover glow-salmon'; // Salmon
+		}
+
+	}
+
+	function getBoltColor(type) {
+
+		switch (type) {
+			case 'Film':
+				return 'bolt-blue';
+
+			case 'Character':
+				return 'bolt-light-green';
+
+			case 'Organization':
+				return 'bolt-dark-green';
+
+			case 'Species':
+				return 'bolt-light-lime';
+
+			case 'Location':
+				return 'bolt-brown';
+			
+			case 'Technology':
+				return 'bolt-red';
+
+			case 'Vehicle':
+				return 'bolt-yellow';
+
+			case 'Creature':
+				return 'bolt-purple';
+
+			case 'Droid':
+				return 'bolt-orange';
+
+			default:
+				return 'bolt-salmon';
+		}
+
+	}
+
+	function getTypeTemplate (type) {
+
+		let source = null;
+		let template = null;
+
+		switch (type) {
+			case 'Film' || 'Organization':
+				source = $('#infoFilmOrgTemplate').text();
+				template = new plate.Template(source);
+				return template;
+			
+			case 'Character':
+				source = $('#infoCharacterTemplate').text();
+				template = new plate.Template(source);
+				return template;
+
+			case 'Location':
+				source = $('#infoLocationTemplate').text();
+				template = new plate.Template(source);
+				return template;
+
+			default:
+				source = $('#infoTemplate').text();
+				template = new plate.Template(source);
+				return template;
+		}
+
+	}
+
 	function isLinkMapped(idA, idB) {
 
 		let key = idA < idB ? idA + '-' + idB : idB + '-' + idA;
@@ -347,15 +529,4 @@
 		}
 	}
 
-	function getJson(done) {
-
-		let httpRequest = new XMLHttpRequest();
-
-		httpRequest.addEventListener('load', function () {
-			done(JSON.parse(httpRequest.responseText));
-		});
-
-		httpRequest.open('GET', '/data.json');
-		httpRequest.send();
-	}
 })();
