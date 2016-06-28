@@ -13,10 +13,40 @@
 </head>
 
 <body>
+
 	<div class="container-responsive">
 		<div id="graph"></div>
 	</div>
+
 	<div id="info"></div>
+	<div id="feedback"></div>
+
+	<button type="button" class="btn btn-small" id="feedbackButton">
+		Feedback
+	</button>
+
+	<script class="modal fade" type="text/html" id="feedbackTemplate">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="thumbnail page-layout animated bounceInRight" id="feedbackCard">
+					<form class="form">
+						<div class="form-group">
+							<label for="Subject">Subject</label>
+							<input type="text">
+						</div>
+						<div class="form-group">
+							<label for="Feedback">Feedback</label>
+							<textarea name="feedback" cols="30" rows="10"></textarea>
+						</div>
+						<div class="btn-group">
+							<button class="btn btn-small btn-success">Submit</button>
+							<button type="button" class="btn btn-small btn-danger" id="closeFeedback">Close</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</script>
 
 	<script type="text/html" id="infoFilmOrgTemplate">
 		<div class="row">
@@ -121,7 +151,6 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="bundle.js"></script>
-	<script src="util.js"></script>
 	<audio controls autoplay>
 		<source src="audio/theme.ogg" type="audio/ogg">
 		<source src="audio/theme.mp3" type="audio/mpeg">

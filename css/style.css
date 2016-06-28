@@ -31,14 +31,26 @@ img {
 	top: 40px;
 	width: 350px;
 }
+#feedback {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	width: 350px;
+}
+#feedbackButton {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	opacity: .7;
+}
 .page-layout {
 	border: none;
 	text-align: center;
 	padding-top: 20px;
 	padding: 20px 10px 0 20px;
 	border-radius: 10px;
-	-webkit-filter: drop-shadow(0px 0px 20px #FFE81F);
-	filter: drop-shadow(0px 0px 20px #FFE81F);
+	/*-webkit-filter: drop-shadow(0px 0px 20px #FFE81F);
+	filter: drop-shadow(0px 0px 20px #FFE81F);*/
 	height: 500px;
 	overflow: auto;
 	/*background: linear-gradient(to bottom right, #111, #444);

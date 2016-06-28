@@ -51,6 +51,8 @@
 
 			// let source = $('#infoTemplate').text();
 			// let template = new plate.Template(source);
+
+			closeFeedbackCard();
 			
 			let template = getTypeTemplate(node.data.type);
 
@@ -69,7 +71,30 @@
 				info.html(html);
 			});
 		});
+
 	});
+
+    
+    $('body').on('click', '#hide-card', function(){
+        closeCard();
+    });
+
+    $('#feedbackButton').on('click', function() {
+
+        var source = $('#feedbackTemplate').text();
+		var template = new plate.Template(source);
+
+		closeCard();
+
+        template.render({}, function (err, html) {
+
+            $('#feedback').html(html);
+        });        
+    });
+
+    $('body').on('click', '#closeFeedback', function() {
+		closeFeedbackCard();
+    });
 
 	function mapOrganizations(item, organization) {
 
@@ -343,42 +368,6 @@
 		}
 	}
 
-	// function getGlowColor(type) {
-
-	// 	switch (type) {
-	// 		case 'Film':
-	// 			return 'glow-blue';
-
-	// 		case 'Character':
-	// 			return 'glow-light-green';
-
-	// 		case 'Organization':
-	// 			return 'glow-dark-green';
-
-	// 		case 'Species':
-	// 			return 'glow-light-lime';
-
-	// 		case 'Location':
-	// 			return 'glow-brown';
-
-	// 		case 'Technology':
-	// 			return 'glow-red';
-
-	// 		case 'Vehicle':
-	// 			return 'glow-yellow';
-
-	// 		case 'Creature':
-	// 			return 'glow-pruple';
-
-	// 		case 'Droid':
-	// 			return 'glow-orange';
-
-	// 		default:
-	// 			return 'glow-salmon';
-	// 	}
-
-	// }
-
 	function getTypeClass(type) {
 
 		switch (type) {
@@ -527,6 +516,35 @@
 			linkKeys[key] = true;
 			return false;
 		}
+	}
+
+	function closeCard() {
+
+		var card = $("#card") 
+        card.removeClass('bounceInRight');
+        card.addClass('bounceOutRight');
+        setTimeout(function(){
+            card.hide();
+            card.addClass('bounceInRight');
+            card.removeClass('bounceOutRight');
+        }, 700);
+
+	}
+
+	function closeFeedbackCard() {
+
+		var feedback = $('#feedbackCard');
+
+        feedback.removeClass('bounceInRight');
+        feedback.addClass('bounceOutRight');
+        setTimeout(function() {
+
+            feedback.hide();
+            feedback.addClass('bounceInRight');
+            feedback.removeClass('bounceOutRight');
+
+        }, 700);
+
 	}
 
 })();
