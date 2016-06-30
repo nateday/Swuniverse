@@ -13,166 +13,20 @@
 </head>
 
 <body>
-
 	<div class="container-responsive">
 		<div id="graph"></div>
 	</div>
-
 	<div id="info"></div>
-	<div id="feedback"></div>
-	<div id="legend"></div>
-
-	<button type="button" class="btn btn-small" id="legendButton">
-		Legend
-	</button>
-
-	<script type="text/html" id="legendTemplate">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="thumbnail page-layout glow-white animated bounceInLeft" id="legendCard">
-					<h2 id="john-legend">Legend</h2>
-					<div class="lightsaber animated22 bounceInRight"></div>
-					<div class="lightsaber animated24 bounceInRight"></div>
-					<div class="lightsaber animated26 bounceInRight"></div>
-					<div class="br"></div>
-					<p id="film" class="legend-color">Films</p>
-					<p id="characters" class="legend-color">Characters</p>
-					<p id="creatures" class="legend-color">Creatures</p>
-					<p id="droids" class="legend-color">Droids</p>
-					<p id="species" class="legend-color">Species</p>
-					<p id="organizations" class="legend-color">Organizations</p>
-					<p id="locations" class="legend-color">Locations</p>
-					<p id="technology" class="legend-color">Technology</p>
-					<p id="vehicles" class="legend-color">Vehicles</p>
-				</div>
-			</div>
-		</div>
-	</script>
-
-	<button type="button" class="btn btn-small" id="feedbackButton">
-		Feedback
-	</button>
-
-	<script type="text/html" id="feedbackTemplate">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="thumbnail page-layout glow-white animated bounceInRight" id="feedbackCard">
-					<h2 class="john-feedback">Feedback</h2>
-					<div class="lightsaber animated22 bounceInRight"></div>
-					<div class="lightsaber animated24 bounceInRight"></div>
-					<div class="lightsaber animated26 bounceInRight"></div>
-					<div class="br"></div>
-					<form class="form push-left">
-						<div class="form-group">
-							<label for="Subject" class="john-feedback">Subject</label><br>
-							<input type="text" placeholder="Subject">
-						</div>
-						<div class="form-group">
-							<label for="Feedback" class="john-feedback">Feedback</label><br>
-							<textarea name="feedback" cols="30" rows="10" placeholder="Comment"></textarea>
-						</div>
-						<div class="btn-group">
-							<button class="btn btn-small btn-success">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</script>
-
-	<script type="text/html" id="infoFilmOrgTemplate">
-		<div class="row">
-			<div class="col-sm-12" id="hide-cards">
-				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
-					<audio controls autoplay>
-						<source src="audio/light-saber.ogg" type="audio/ogg">
-						<source src="audio/light-saber.mp3" type="audio/mpeg">
-					</audio>
-					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
-					<br>
-					<img src="{{ image }}" alt="{{ name }}">
-					<div class="caption">
-						<h3>{{ name }}</h3>
-						<div class="lightsaber animated22 bounceInRight"></div>
-						<div class="lightsaber animated24 bounceInRight"></div>
-						<div class="lightsaber animated26 bounceInRight"></div>
-						<br>
-						<p>{{ description }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
-
-	<script type="text/html" id="infoCharacterTemplate">
-		<div class="row">
-			<div class="col-sm-12" id="hide-cards">
-				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
-					<audio controls autoplay>
-						<source src="audio/light-saber.ogg" type="audio/ogg">
-						<source src="audio/light-saber.mp3" type="audio/mpeg">
-					</audio>
-					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
-					<br>
-					<img src="{{ image }}" alt="{{ name }}">
-					<div class="caption">
-						<h3>{{ name }}</h3>
-						<div class="lightsaber animated22 bounceInRight"></div>
-						<div class="lightsaber animated24 bounceInRight"></div>
-						<div class="lightsaber animated26 bounceInRight"></div>
-						<br>
-						<p>{{ description }}</p>
-						{% if gender %}
-						<p>Gender: {{ gender }}</p>
-						{% endif %}
-						{% if dimensions %}
-						<p>Dimensions: {{ dimensions }}</p>
-						{% endif %}
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
-
-	<script type="text/html" id="infoLocationTemplate">
-		<div class="row">
-			<div class="col-sm-12" id="hide-cards">
-				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
-					<audio controls autoplay>
-						<source src="audio/light-saber.ogg" type="audio/ogg">
-						<source src="audio/light-saber.mp3" type="audio/mpeg">
-					</audio>
-					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
-					<br>
-					<img src="{{ image }}" alt="{{ name }}">
-					<div class="caption">
-						<h3>{{ name }}</h3>
-						<div class="lightsaber animated22 bounceInRight"></div>
-						<div class="lightsaber animated24 bounceInRight"></div>
-						<div class="lightsaber animated26 bounceInRight"></div>
-						<br>
-						<p>{{ description }}</p>
-						{% if climate %}
-						<p>Climate: {{ climate }}</p>
-						{% endif %}
-						{% if terrain %}
-						<p>Terrain: {{ terrain }}</p>
-						{% endif %}
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
 
 	<script type="text/html" id="infoTemplate">
 		<div class="row">
 			<div class="col-sm-12" id="hide-cards">
-				<div class="thumbnail page-layout {{ typeClass }} animated bounceInRight" id="card">
+				<div class="thumbnail page-layout animated bounceInRight" id="card">
 					<audio controls autoplay>
 						<source src="audio/light-saber.ogg" type="audio/ogg">
 						<source src="audio/light-saber.mp3" type="audio/mpeg">
 					</audio>
-					<a><p class="remove-box {{ boxColor }}" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
+					<a><p class="remove-box" id="hide-card">Force <i class="fa fa-bolt" aria-hidden="true"></i> Close</p></a>
 					<br>
 					<img src="{{ image }}" alt="{{ name }}">
 					<div class="caption">
@@ -182,17 +36,16 @@
 						<div class="lightsaber animated26 bounceInRight"></div>
 						<br>
 						<p>{{ description }}</p>
-						{% if dimensions %}
-						<p>Dimensions: {{ dimensions }}</p>
-						{% endif %}
 					</div>
 				</div>
 			</div>
 		</div>
 	</script>
 
+
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="bundle.js"></script>
+	<script src="util.js"></script>
 	<audio controls autoplay>
 		<source src="audio/theme.ogg" type="audio/ogg">
 		<source src="audio/theme.mp3" type="audio/mpeg">

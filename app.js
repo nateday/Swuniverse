@@ -8,8 +8,6 @@
 	let swSata = {};
 	let itemNames = {};
 	let linkKeys = {};
-	let legendOpen = false;
-	let feedbackOpen = false;
 
 	let physics = {
 		springLength: 100,
@@ -19,7 +17,7 @@
 		dragCoeff: 0.02
 	};
 
-	$.get('/data.json', function(json) {
+	getJson(function (json) {
 
 		swData = json;
 
@@ -31,18 +29,7 @@
 
 			mapOrganizations(item, item.organizations);
 			mapFilms(item, item.films);
-<<<<<<< HEAD
 			mapTechnologies(item, item.technology);
-=======
-			mapTechnology(item, item.technology);
-			mapCharacters(item, item.characters);
-			mapDroids(item, item.droids);
-			mapCreatures(item, item.creatures);
-			mapLocations(item, item.locations);
-			mapSpecies(item, item.species);
-			mapVehicles(item, item.vehicles);
-			
->>>>>>> origin/master
 		});
 
 		let renderer = renderGraph(graph, {
@@ -54,22 +41,10 @@
 
 		renderer.on('nodeclick', function (node) {
 			console.log(node);	
-
-			// let source = $('#infoTemplate').text();
-			// let template = new plate.Template(source);
-
-			closeFeedbackCard();
-			closeLegendCard();
-			
-			let template = getTypeTemplate(node.data.type);
+			let source = $('#infoTemplate').text();
+			let template = new plate.Template(source);
 
 			renderer.showNode(node.id, 30);
-
-			node.data.typeClass = getTypeClass(node.data.type);
-
-			node.data.boxColor = getBoxColor(node.data.type);
-
-			node.data.boltColor = getBoltColor(node.data.type);
 
 			template.render(node.data, function (err, html) {
 
@@ -78,67 +53,6 @@
 				info.html(html);
 			});
 		});
-
-	});
-
-<<<<<<< HEAD
-	function mapOrganizations(item, organization) {
-
-		if (organization) {
-			organization.forEach(function (organizationId) {
-				if (!isLinkMapped(item.id, organizationId)) {
-
-					let itemName = getItemName(item.id);
-					let organizationName = getItemName(organizationId);
-
-					graph.addLink(itemName, organizationName, { from: item.type, to: 'Organization' });
-=======
-    
-    $('body').on('click', '#hide-card', function(){
-        closeCard();
-    });
-
-    $('#feedbackButton').on('click', function() {
-
-		if (feedbackOpen) {
-			closeFeedbackCard();
-			feedbackOpen = !feedbackOpen;
-		}
-		else {
-
-			var source = $('#feedbackTemplate').text();
-			var template = new plate.Template(source);
-
-			closeCard();
-			closeLegendCard();
-
-			template.render({}, function (err, html) {
-
-				$('#feedback').html(html);
-			});
-			feedbackOpen = !feedbackOpen;
-		}        
-    });
-
-	$('#legendButton').on('click', function() {
-
-		if(legendOpen) {
-			closeLegendCard();
-			legendOpen = !legendOpen;
-		}
-		else {
-			var source = $('#legendTemplate').text();
-			var template = new plate.Template(source);
-
-			closeCard();
-			closeFeedbackCard();
-
-			template.render({}, function (err, html) {
-
-				$('#legend').html(html);
-			});
-			legendOpen = !legendOpen;
-		}
 	});
 
 	function mapOrganizations(item, organization) {
@@ -151,22 +65,6 @@
 					let organizationName = getItemName(organizationId);
 
 					graph.addLink(itemName, organizationName, { from: item.type, to: 'Organization' });
-				}
-			});
-		}
-	}
-
-	function mapLocations(item, locations) {
-
-		if (locations) {
-			locations.forEach(function (locationId) {
-				if (!isLinkMapped(item.id, locationId)) {
-
-					let itemName = getItemName(item.id);
-					let locationName = getItemName(locationId);
-
-					graph.addLink(itemName, locationName, { from: item.type, to: 'Location' });
->>>>>>> origin/master
 				}
 			});
 		}
@@ -187,11 +85,7 @@
 		}
 	}
 
-<<<<<<< HEAD
 	function mapTechnologies(item, technology) {
-=======
-	function mapTechnology(item, technology) {
->>>>>>> origin/master
 
 		if (technology) {
 			technology.forEach(function (technologyId) {
@@ -201,48 +95,12 @@
 					let technologyName = getItemName(technologyId);
 
 					graph.addLink(itemName, technologyName, { from: item.type, to: 'Technology' });
-<<<<<<< HEAD
-=======
 				}
 			});
 		}
 	}
 
-	function mapCharacters(item, characters) {
-
-		if (characters) {
-			characters.forEach(function (characterId) {
-				if (!isLinkMapped(item.id, characterId)) {
-
-					let itemName = getItemName(item.id);
-					let characterName = getItemName(characterId);
-
-					graph.addLink(itemName, characterName, { from: item.type, to: 'Character' });
->>>>>>> origin/master
-				}
-			});
-		}
-	}
-
-	function mapCreatures(item, creatures) {
-
-		if (creatures) {
-			creatures.forEach(function (creatureId) {
-				if (!isLinkMapped(item.id, creatureId)) {
-
-					let itemName = getItemName(item.id);
-					let creatureName = getItemName(creatureId);
-
-					graph.addLink(itemName, creatureName, { from: item.type, to: 'Creature' });
-				}
-			});
-		}
-	}
-
-<<<<<<< HEAD
-	function mapSpecies(item, tools) {
-=======
-	function mapVehicles(item, vehicles) {
+	function mapVehicles(item, tools) {
 
 		if (vehicles) {
 			vehicles.forEach(function (vehicleId) {
@@ -257,8 +115,7 @@
 		}
 	}
 
-	function mapSpecies(item, species) {
->>>>>>> origin/master
+	function mapSpecies(item, tools) {
 
 		if (species) {
 			species.forEach(function (speciesId) {
@@ -273,7 +130,7 @@
 		}
 	}
 
-	function mapDroids(item, droids) {
+	function mapDroids(item, tools) {
 
 		if (droids) {
 			droids.forEach(function (droidId) {
@@ -347,15 +204,6 @@
 					size: 25
 				};
 
-<<<<<<< HEAD
-=======
-			case 'Creature':
-				return {
-					color: color,
-					size: 25
-				};
-
->>>>>>> origin/master
 			case 'Species':
 				return {
 					color: color,
@@ -408,13 +256,8 @@
 			case 'Species':
 				return 0xD0F8AB; // Light Lime	
 
-<<<<<<< HEAD
 			case 'Planet':
 				return 0xCDB465; // Tan
-=======
-			case 'Location':
-				return 0x663300; // Brown	
->>>>>>> origin/master
 
 			case 'Technology':
 				return 0xC9302C; // Red
@@ -422,155 +265,12 @@
 			case 'Vehicle':
 				return 0xFFFF00; // Yellow
 
-<<<<<<< HEAD
-=======
-			case 'Creature':
-				return 0x8d23a3; // Purple
-
->>>>>>> origin/master
 			case 'Droid':
 				return 0xFFA500 // Orange		
 
 			default:
 				return 0xEBA071; // Salmon
 		}
-	}
-
-	function getTypeClass(type) {
-
-		switch (type) {
-			case 'Film':
-				return 'node-blue'; // Blue
-
-			case 'Character':
-				return 'node-light-green'; // Light Green
-
-			case 'Organization':
-				return 'node-dark-green'; // Dark Green	
-
-			case 'Species':
-				return 'node-light-lime'; // Light Lime	
-
-			case 'Location':
-				return 'node-brown'; // Brown	
-
-			case 'Technology':
-				return 'node-red'; // Red
-
-			case 'Vehicle':
-				return 'node-yellow'; // Yellow
-
-			case 'Creature':
-				return 'node-purple'; // Purple
-
-			case 'Droid':
-				return 'node-orange'; // Orange		
-
-			 default:
-			 	return 'node-salmon'; // Salmon
-		}
-
-	}
-
-	function getBoxColor(type) {
-
-		switch (type) {
-			case 'Film':
-				return 'box-blue box-blue:hover glow-blue'; // Blue
-
-			case 'Character':
-				return 'box-light-green box-light-green:hover glow-light-green'; // Light Green
-
-			case 'Organization':
-				return 'box-dark-green box-dark-green:hover glow-dark-green'; // Dark Green	
-
-			case 'Species':
-				return 'box-light-lime box-light-lime:hover glow-light-lime'; // Light Lime	
-
-			case 'Location':
-				return 'box-brown box-brown:hover glow-brown'; // Brown	
-
-			case 'Technology':
-				return 'box-red box-red:hover glow-red'; // Red
-
-			case 'Vehicle':
-				return 'box-yellow box-yellow:hover glow-yellow'; // Yellow
-
-			case 'Creature':
-				return 'box-purple box-purple:hover glow-purple'; // Purple
-
-			case 'Droid':
-				return 'box-orange box-orange:hover glow-orange'; // Orange		
-
-			 default:
-			 	return 'box-salmon box-salmon:hover glow-salmon'; // Salmon
-		}
-
-	}
-
-	function getBoltColor(type) {
-
-		switch (type) {
-			case 'Film':
-				return 'bolt-blue';
-
-			case 'Character':
-				return 'bolt-light-green';
-
-			case 'Organization':
-				return 'bolt-dark-green';
-
-			case 'Species':
-				return 'bolt-light-lime';
-
-			case 'Location':
-				return 'bolt-brown';
-			
-			case 'Technology':
-				return 'bolt-red';
-
-			case 'Vehicle':
-				return 'bolt-yellow';
-
-			case 'Creature':
-				return 'bolt-purple';
-
-			case 'Droid':
-				return 'bolt-orange';
-
-			default:
-				return 'bolt-salmon';
-		}
-
-	}
-
-	function getTypeTemplate (type) {
-
-		let source = null;
-		let template = null;
-
-		switch (type) {
-			case 'Film' || 'Organization':
-				source = $('#infoFilmOrgTemplate').text();
-				template = new plate.Template(source);
-				return template;
-			
-			case 'Character':
-				source = $('#infoCharacterTemplate').text();
-				template = new plate.Template(source);
-				return template;
-
-			case 'Location':
-				source = $('#infoLocationTemplate').text();
-				template = new plate.Template(source);
-				return template;
-
-			default:
-				source = $('#infoTemplate').text();
-				template = new plate.Template(source);
-				return template;
-		}
-
 	}
 
 	function isLinkMapped(idA, idB) {
@@ -586,49 +286,15 @@
 		}
 	}
 
-	function closeCard() {
+	function getJson(done) {
 
-		var card = $("#card") 
-        card.removeClass('bounceInRight');
-        card.addClass('bounceOutRight');
-        setTimeout(function(){
-            card.hide();
-            card.addClass('bounceInRight');
-            card.removeClass('bounceOutRight');
-        }, 700);
+		let httpRequest = new XMLHttpRequest();
 
+		httpRequest.addEventListener('load', function () {
+			done(JSON.parse(httpRequest.responseText));
+		});
+
+		httpRequest.open('GET', '/data.json');
+		httpRequest.send();
 	}
-
-	function closeFeedbackCard() {
-
-		var feedback = $('#feedbackCard');
-
-        feedback.removeClass('bounceInRight');
-        feedback.addClass('bounceOutRight');
-        setTimeout(function() {
-
-            feedback.hide();
-            feedback.addClass('bounceInRight');
-            feedback.removeClass('bounceOutRight');
-
-        }, 700);
-
-	}
-
-	function closeLegendCard() {
-
-		var legend = $('#legendCard');
-
-		legend.removeClass('bounceInLeft');
-		legend.addClass('bounceOutLeft');
-		setTimeout(function () {
-
-			legend.hide();
-			legend.addClass('bounceInLeft');
-			legend.removeClass('bounceOutLeft');
-
-		}, 700);
-
-	}
-
 })();
