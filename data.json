@@ -64,9 +64,7 @@
             "9998916f-d91f-416f-a0fb-886f9bd78348"
         ],
         "creatures": [],
-        "locations": [
-            "8be251cc-8af0-404e-b70e-b847fc077317"
-        ],
+        "locations": [],
         "gender": "Female",
         "dimensions": "Height: 1.7m ",
         "type": "Character",
@@ -121,9 +119,7 @@
             "12c47c66-85e2-4405-b83d-a4445443aff0"
         ],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.8m ",
         "type": "Character",
@@ -233,9 +229,7 @@
             "0733afcf-c860-4cba-b292-de121589b61f"
         ],
         "technology": [],
-        "vehicles": [
-            "a8d33e96-cc7e-421f-9431-ec28a30b881a"
-        ],
+        "vehicles": [],
         "droids": [],
         "species": [],
         "creatures": [],
@@ -368,7 +362,6 @@
         ],
         "creatures": [],
         "locations": [
-            "4793050b-7255-405d-b037-341a89a65947",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "gender": "Male",
@@ -465,7 +458,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "9ac2e3c3-cf7d-4005-8b67-4cfe4c6dc1e5",
             "713eb506-e956-47a6-b743-2eddd1bdac02"
         ],
         "gender": "Male",
@@ -651,7 +643,6 @@
         ],
         "creatures": [],
         "locations": [
-            "8be251cc-8af0-404e-b70e-b847fc077317",
             "a1da0ced-016e-4cbb-9eda-8ef152acf85e",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
@@ -819,9 +810,7 @@
         "technology": [
             "e3e1e084-ef4e-48fb-aa5c-16b4b51c0846"
         ],
-        "vehicles": [
-            "a9457581-0327-4a6a-95f0-f1636428b664"
-        ],
+        "vehicles": [],
         "droids": [],
         "species": [
             "a8a0f7e7-7aa0-46a9-92ef-a224fcc153b9"
@@ -1053,9 +1042,7 @@
             "5b5f82c7-7411-4212-8144-74d626613faa"
         ],
         "creatures": [],
-        "locations": [
-            "ebc3dd77-b13f-46da-8b02-e4130d0285fd"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.77m ",
         "type": "Character",
@@ -1135,9 +1122,7 @@
             "5b5f82c7-7411-4212-8144-74d626613faa"
         ],
         "creatures": [],
-        "locations": [
-            "ebc3dd77-b13f-46da-8b02-e4130d0285fd"
-        ],
+        "locations": [],
         "gender": "Female",
         "dimensions": "Height: 1.65m ",
         "type": "Character",
@@ -1436,7 +1421,6 @@
         ],
         "technology": [],
         "vehicles": [
-            "0b1456ff-1a79-43f4-8b02-4ec92d33181f",
             "26c287fb-f9d6-4237-a03d-121cc3600621",
             "fcf56a71-241e-4083-8887-ba007d4865e4",
             "4af35278-cd98-4918-acc9-8eaeb1e754e4"
@@ -1533,7 +1517,6 @@
             "7c176c84-987e-4206-9af6-ecd4bed15a5e"
         ],
         "technology": [
-            "85564c55-b485-48a3-95c2-042a4ff3ddd3",
             "a3394078-4cdc-4359-89f6-0c057dbf7c34"
         ],
         "vehicles": [
@@ -1543,9 +1526,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "2be583dd-0e94-43e3-a877-f534cf033773"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.93m ",
         "type": "Character",
@@ -1630,7 +1611,6 @@
             "8cf4cb81-f5c8-484a-8c1d-2d06700e8bf4"
         ],
         "technology": [
-            "1412881c-0257-4858-9a76-1b6d9a34306a",
             "be35d05a-a3c3-4513-8dc6-0601f56e3c81"
         ],
         "vehicles": [
@@ -1642,9 +1622,7 @@
             "2b2105fd-1f3d-428b-9c4d-db06135fed10"
         ],
         "creatures": [],
-        "locations": [
-            "52a5508d-c7fd-422a-81c7-c3ca60fd11a0"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.75m ",
         "type": "Character",
@@ -1803,8 +1781,7 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "87f852f4-665d-4125-9b7b-fcd7d07c59c5",
-            "87c21ae2-1bff-4a53-b4d7-b67b55ed2df4"
+            "87f852f4-665d-4125-9b7b-fcd7d07c59c5"
         ],
         "gender": "Male",
         "dimensions": "",
@@ -2224,7 +2201,6 @@
         ],
         "creatures": [],
         "locations": [
-            "094fd084-ea8e-47f3-8e0d-4f57e72459ea",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
         "gender": "Female",
@@ -2346,9 +2322,7 @@
         ],
         "vehicles": [
             "3eceff21-c36a-47f9-82a1-eb7969e46f88",
-            "c86cb7f7-ccbe-46de-abc5-5a50986cab82",
-            "a8d33e96-cc7e-421f-9431-ec28a30b881a",
-            "fcd75d65-e21e-4a7c-9e48-03f5ff2d8cbe"
+            "c86cb7f7-ccbe-46de-abc5-5a50986cab82"
         ],
         "droids": [],
         "species": [],
@@ -3071,8 +3045,7 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "87f852f4-665d-4125-9b7b-fcd7d07c59c5",
-            "87c21ae2-1bff-4a53-b4d7-b67b55ed2df4"
+            "87f852f4-665d-4125-9b7b-fcd7d07c59c5"
         ],
         "gender": "Male",
         "dimensions": "",
@@ -3286,9 +3259,6 @@
             "d2e8fe79-7535-440b-99a3-d356957cd755"
         ],
         "technology": [
-            "cb809183-21d3-44e7-965c-a9be6d373e2d",
-            "2c00d1e1-dd19-496f-be6b-2f059ee626f9",
-            "88ad38a0-ced2-4d44-9922-65a1a453ebbe",
             "7ff5789c-9fa0-4afb-99f7-6084b25d7203"
         ],
         "vehicles": [
@@ -3825,9 +3795,7 @@
             "12c47c66-85e2-4405-b83d-a4445443aff0"
         ],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "gender": "Female",
         "dimensions": "Height: 1.71m ",
         "type": "Character",
@@ -4035,9 +4003,7 @@
             "93c90b8e-cf01-4edd-b967-3bdb3f53f57a"
         ],
         "creatures": [],
-        "locations": [
-            "e843001a-b906-4c80-9125-a756c55ed122"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.75m ",
         "type": "Character",
@@ -4059,7 +4025,6 @@
         ],
         "creatures": [],
         "locations": [
-            "8be251cc-8af0-404e-b70e-b847fc077317",
             "a1da0ced-016e-4cbb-9eda-8ef152acf85e"
         ],
         "gender": "Female",
@@ -4111,9 +4076,7 @@
             "9998916f-d91f-416f-a0fb-886f9bd78348"
         ],
         "creatures": [],
-        "locations": [
-            "8be251cc-8af0-404e-b70e-b847fc077317"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 1.84m ",
         "type": "Character",
@@ -4622,7 +4585,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "9ac2e3c3-cf7d-4005-8b67-4cfe4c6dc1e5",
             "2be3c6f8-047a-4639-8683-196356df15c4"
         ],
         "gender": "",
@@ -4738,9 +4700,7 @@
             "5cccdac2-fcfe-4969-b5b3-3ac6414fcd66"
         ],
         "creatures": [],
-        "locations": [
-            "5c4e0130-822a-4786-ae24-158209fbefcb"
-        ],
+        "locations": [],
         "gender": "Male",
         "dimensions": "Height: 0.79m ",
         "type": "Character",
@@ -5009,7 +4969,6 @@
         ],
         "creatures": [],
         "locations": [
-            "4793050b-7255-405d-b037-341a89a65947",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
         "gender": "Male",
@@ -5131,7 +5090,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "2ca7bc25-e288-4fc6-8d7d-1b56fa5335d1",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "gender": "Male",
@@ -5201,12 +5159,9 @@
         "technology": [],
         "vehicles": [],
         "droids": [],
-        "species": [
-            "71911480-7eeb-47b3-80b5-a749bf08508b"
-        ],
+        "species": [],
         "creatures": [],
         "locations": [
-            "b3b6d139-d4a5-4622-a514-772169c61db8",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "gender": "Female",
@@ -5531,7 +5486,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "505b26fa-d26b-4c72-8680-a5de13fc2c80",
             "2be3c6f8-047a-4639-8683-196356df15c4",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
@@ -6001,9 +5955,7 @@
             "810c0cd0-ef26-4fed-9e27-2e73e44057a1",
             "a3394078-4cdc-4359-89f6-0c057dbf7c34"
         ],
-        "vehicles": [
-            "3020a63f-a308-42f3-8e99-02a91a55aad6"
-        ],
+        "vehicles": [],
         "droids": [],
         "species": [],
         "creatures": [],
@@ -6240,7 +6192,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "87c21ae2-1bff-4a53-b4d7-b67b55ed2df4",
             "2be3c6f8-047a-4639-8683-196356df15c4"
         ],
         "dimensions": "Height: 4.3m ",
@@ -6621,7 +6572,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "3dd49117-8d7b-47e4-90cf-51c5cde10abf",
             "a1da0ced-016e-4cbb-9eda-8ef152acf85e"
         ],
         "dimensions": "",
@@ -7391,29 +7341,18 @@
             "05e49a89-f3cd-4e48-bed2-1f3e714f6f6a",
             "56e6927c-9895-4dd9-b871-16ef4befa269",
             "999deec0-0665-46f9-856e-f42cf697d386",
-            "e0c96b12-e975-4c00-b6c7-7b917f5e7f96",
-            "54288f13-ce5f-449f-909a-08fc716f8780",
-            "d19c4ba3-39fe-4e5f-b986-f45d5fd8b247",
             "7c176c84-987e-4206-9af6-ecd4bed15a5e",
             "20ad1dff-75db-4f12-a49a-4459032f8d1d",
             "555f684a-3a40-4e3a-947d-eaa3763f93d6"
         ],
-        "technology": [
-            "54eea6ab-2b08-467b-b05d-1f844ffe1737"
-        ],
+        "technology": [],
         "vehicles": [
             "5e05a642-1cbf-42ea-be80-1322cf4b14fd",
-            "01a0f68d-28b9-4a79-a6b5-2a9d964ab30b",
             "f17a2f1f-d854-47d1-b711-d4ad96f508a5",
-            "93cd3182-fdb2-4bc1-8142-f05aedee7c86",
             "21b6e731-0426-4407-bea5-387f3d949b38"
         ],
-        "droids": [
-            "7fdb7a51-2dc0-4cb3-b6b8-9ea06ae0b999"
-        ],
+        "droids": [],
         "species": [
-            "c3618824-77bf-43f4-b0ee-542729c4197f",
-            "06a1ee98-41ed-47b9-8852-c8fb08257cdd",
             "37adaaa0-1a06-4213-9513-cf39e9b16bba",
             "9b45a853-6655-428e-aed7-aed1e2aeb40f",
             "56604f69-fc24-4f43-9a7f-79bc6f11d515"
@@ -7650,7 +7589,6 @@
         ],
         "vehicles": [
             "e2a31215-a848-499d-99a3-8f172894ada1",
-            "c82860fc-3654-42ac-a918-2020179ff879",
             "8acaa3fd-18c0-4d22-adfa-841d049c850f"
         ],
         "droids": [
@@ -7760,8 +7698,7 @@
             "31715b25-5218-48a6-a5f7-f75a7c461000"
         ],
         "organizations": [
-            "3b1c86ae-d0ad-4e18-a0cf-6e2ff1faed14",
-            "cd20e45c-181b-4dba-b312-1f345537fcdb"
+            "3b1c86ae-d0ad-4e18-a0cf-6e2ff1faed14"
         ],
         "technology": [],
         "vehicles": [],
@@ -7811,7 +7748,6 @@
         ],
         "organizations": [
             "05e49a89-f3cd-4e48-bed2-1f3e714f6f6a",
-            "e0c96b12-e975-4c00-b6c7-7b917f5e7f96",
             "7c176c84-987e-4206-9af6-ecd4bed15a5e"
         ],
         "technology": [],
@@ -8053,8 +7989,7 @@
         "organizations": [
             "a67bb3c5-fc66-468d-a632-bdb94daa7b83",
             "0733afcf-c860-4cba-b292-de121589b61f",
-            "20ad1dff-75db-4f12-a49a-4459032f8d1d",
-            "2c729a4f-d91c-453e-8e2a-53b12efdc11b"
+            "20ad1dff-75db-4f12-a49a-4459032f8d1d"
         ],
         "technology": [],
         "vehicles": [],
@@ -8080,9 +8015,7 @@
         "technology": [],
         "vehicles": [],
         "droids": [],
-        "species": [
-            "81c57243-c46c-40ec-9b25-d5e4c4f84c8e"
-        ],
+        "species": [],
         "creatures": [],
         "locations": [],
         "climate": "",
@@ -8112,8 +8045,7 @@
         "technology": [
             "07f9da98-ded8-4d41-abb3-4f84b8e6b86f",
             "0c343c4d-12d4-4811-8050-b7fb08098971",
-            "28c18b3f-7636-4259-a16b-6a31727b52d1",
-            "6548b9f9-52fd-409c-99e1-1875a4f58c2e"
+            "28c18b3f-7636-4259-a16b-6a31727b52d1"
         ],
         "vehicles": [
             "D767BEAE-386F-D7FA-4D5E-7C52D8E379F6",
@@ -8334,7 +8266,6 @@
         ],
         "organizations": [
             "347c1618-d856-4c9b-b900-f218f3df9fbb",
-            "cd20e45c-181b-4dba-b312-1f345537fcdb",
             "5253bd07-8f5b-4e69-afad-c2d0c5316ca1",
             "c3971892-a8ee-4dad-b109-e044006f29bf"
         ],
@@ -8484,7 +8415,6 @@
         "species": [
             "f40e42a8-fab6-4d2d-a630-26681222235e",
             "d1845ee0-a39f-4952-8bbf-e18a6dc3e667",
-            "27ba4293-02e0-4eaf-81e8-da451053a1ff",
             "f38d083e-004f-45af-8b4f-f6a772642795",
             "d46484b3-e922-4f82-8a7f-625a08bee9b8"
         ],
@@ -8695,8 +8625,6 @@
             "7ff5789c-9fa0-4afb-99f7-6084b25d7203"
         ],
         "vehicles": [
-            "c82860fc-3654-42ac-a918-2020179ff879",
-            "0b1456ff-1a79-43f4-8b02-4ec92d33181f",
             "26c287fb-f9d6-4237-a03d-121cc3600621",
             "fe7200fb-e120-48ec-a806-38a15d46ca86",
             "9074169b-75d8-4374-8b8e-2a249ad3dbb3"
@@ -8721,71 +8649,40 @@
             "8f51ae41-782f-41a8-8f29-92c47b9b6ff4",
             "f6ad83db-5eae-4016-8939-0f5ca5f3b3da",
             "936577bc-30eb-424e-a0cd-073b390ef8c7",
-            "7f0f24dd-9196-4fb7-abaf-741c0a4f026c",
-            "ef1f91df-9687-4b07-9a23-6c41acdaf3fe",
-            "c2f9d433-8dc5-4d7a-bfc5-91ab93bc814e"
+            "ef1f91df-9687-4b07-9a23-6c41acdaf3fe"
         ],
         "technology": [
-            "85564c55-b485-48a3-95c2-042a4ff3ddd3",
-            "27fd443d-7bdd-4f1f-86a8-cca58d1b840d",
             "b9567859-8554-4cbe-8bf4-d3685b829a4e",
             "697727d4-906d-4923-9071-68f58e79b340",
-            "65a70432-4d27-4688-8bb5-9994c9eef02c",
-            "e19d3c70-aeb7-43ec-9491-9c34fe54da35",
-            "033dc86e-6006-4a7c-88c0-ad9a7ac57799",
-            "6548b9f9-52fd-409c-99e1-1875a4f58c2e"
+            "033dc86e-6006-4a7c-88c0-ad9a7ac57799"
         ],
         "vehicles": [
             "e2a31215-a848-499d-99a3-8f172894ada1",
             "8acaa3fd-18c0-4d22-adfa-841d049c850f",
-            "fda53cc6-01d7-49e7-bb47-505e23822d23",
             "3eceff21-c36a-47f9-82a1-eb7969e46f88",
-            "a8241778-a85d-4304-8aa5-77196b8c3d59",
-            "ded52beb-a46e-473e-ad0e-d7b0ef6839f9",
-            "c4ceadf9-b3b9-460e-81de-9a7ce2875fd2",
-            "21d53313-865f-4ec1-9caa-c66e81913109",
-            "2ba877f4-9321-4148-a5b8-cbbc76a5f9a2",
             "28730de2-7bd1-4888-8207-ec1508524a9a",
             "ad18a0ea-f201-457d-a3d6-52f0a2bbf6be",
             "83221a6a-97df-4f70-98bc-407df33ae38a",
             "c86cb7f7-ccbe-46de-abc5-5a50986cab82",
-            "510ac246-1e92-42fa-8f99-3e4c3066fc57",
-            "a8d33e96-cc7e-421f-9431-ec28a30b881a",
             "1c9ef20e-abcb-4a57-be25-16a82fced466",
             "9a2414bb-7ae7-48fb-9cfa-8b780c749422",
-            "9846a1ac-e4d6-40a3-aff6-36f0e433cc7e",
             "7a7fd138-14e1-4c98-b110-a779f828c84d",
-            "fcd75d65-e21e-4a7c-9e48-03f5ff2d8cbe",
             "8160808a-5795-4242-9536-f4023b04a719",
-            "0bdca211-7790-4409-96a6-376211b11f68",
             "ec0c5b91-d1b7-4f94-ab29-70b380b16abd"
         ],
         "droids": [
             "ae657ce7-8efe-4057-952c-69404990ddb6",
-            "18e455b1-77a8-4142-a944-8cc830b26642",
-            "853259aa-f588-411b-8ab9-08f68b5925b2",
-            "364a3536-86d2-42d9-bc1d-b1d39971ca29",
             "e84e7fec-2fc2-4e4a-8c1b-fcc50cedff74",
-            "f4435fa6-3d9e-40fb-84c9-5ac7663d393b",
-            "bc465697-74d5-4ae5-b2b9-a538391e85c4",
-            "bd2facee-e91a-4411-98f8-a56c880846cd",
             "4171a60f-3834-4379-92e3-bbea8f853843",
             "73de3a6e-19ce-4b1b-a90c-ff92f488faad",
-            "4cf3824b-d72d-45f6-9883-6eca6c33a5f3",
             "9ea7d642-53f1-4a90-96b8-2841920f0600",
-            "8953864d-aced-4a39-b656-cb363005819f",
-            "834882d0-421d-4402-9b81-cacfd06a31f5",
             "fb26298d-0b6f-4bba-87f9-72aab6e374b3",
-            "569df5d4-1d00-430f-8e7d-922f3559e27e",
             "7cf50637-0184-4620-99cf-e2802a2e9ef5",
             "70ab15c5-7c0c-49db-bf43-8490ee99956a",
-            "960afc70-a7b6-4a1b-b22a-5142e9939a2a",
             "2fff7ce4-30b1-471e-ad99-102a82e4ce2d",
             "cca6c457-b4e0-462e-9bee-aa1404704f46"
         ],
         "species": [
-            "2d28d15f-ea08-4ea7-9312-3d1b81f7649d",
-            "71911480-7eeb-47b3-80b5-a749bf08508b",
             "acf7e21c-5a21-4e17-be70-78978e32ce55",
             "152349cf-9444-4249-b162-f64a2c18d757",
             "106c14fc-1998-443d-8e53-8c5199b48d30"
@@ -8794,17 +8691,9 @@
         "locations": [
             "0ebe0c1e-57de-46df-96bc-68ec718d4cc7",
             "a041d856-6740-4c88-b595-d16325f69c30",
-            "d133c3af-21a5-43f9-8a39-ba2a40a7e6e3",
             "e7cbc1b5-30ad-4311-903d-e73256355822",
-            "b3b6d139-d4a5-4622-a514-772169c61db8",
-            "3b244eda-9814-4479-a50c-ffaaccf3a8f1",
-            "2be583dd-0e94-43e3-a877-f534cf033773",
-            "2c62b25e-4325-43bc-b3d4-236e475dc4dd",
-            "87c21ae2-1bff-4a53-b4d7-b67b55ed2df4",
             "55b0a248-b732-42e9-832b-8fe8b61baf6c",
-            "a9bb1efb-1815-479d-9312-476ffb96be97",
-            "ffab2d0c-5198-4f6c-93f9-a869f8c098b2",
-            "5c8c4b72-5ba0-4f08-a23a-73fece9bcb32"
+            "ffab2d0c-5198-4f6c-93f9-a869f8c098b2"
         ],
         "type": "Organization",
         "id": "0733afcf-c860-4cba-b292-de121589b61f",
@@ -8842,7 +8731,6 @@
             "c89a858f-f4e0-47eb-a6ef-9ba51e48438a"
         ],
         "technology": [
-            "adbf69fd-1e74-41e8-b82a-23b4874090c8",
             "e3e1e084-ef4e-48fb-aa5c-16b4b51c0846",
             "7ff5789c-9fa0-4afb-99f7-6084b25d7203"
         ],
@@ -8851,7 +8739,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "c3c08189-7822-43f8-8ca9-ca95d2a7777a",
             "55b0a248-b732-42e9-832b-8fe8b61baf6c",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
@@ -9046,7 +8933,6 @@
         ],
         "organizations": [
             "a03934a1-4dae-4844-b781-709c07d2b133",
-            "b6e5701a-9999-4845-a140-18566add1497",
             "65958987-3bfa-4b75-b8ce-5905b88b26a1",
             "263b5108-9bce-4676-ad9d-c255031051aa",
             "217c0b82-efd4-44d8-be10-eda6a809e9fb",
@@ -9057,34 +8943,20 @@
             "dcfd5a49-c2fe-469c-90a0-c723a80952d0"
         ],
         "technology": [
-            "1a23ab16-8d54-44e5-8573-6065fa32eb1f",
             "8d90dfcb-2690-4000-8595-1d37ad6c3f87",
-            "2634fd39-e3a2-46a2-9b8a-7d2b1d8aedcd",
             "3b634793-7e01-4b84-8d8a-cc89dfdf38ca",
             "5685ce64-c588-4e7f-9d4d-9d6897914e44",
             "b4ea1dba-52b2-49e2-b592-690db0950162",
             "2a14ecb0-2752-41f2-b4e1-af78f0d0d5ed",
-            "a3666870-8666-4e5a-9584-9287791854dd",
-            "0e2006ac-7b43-4aa8-a1fa-40256bf3390b",
-            "c1020038-2ceb-48fc-9a61-fa5f405bc618",
             "033dc86e-6006-4a7c-88c0-ad9a7ac57799"
         ],
         "vehicles": [
-            "fd354929-c4f1-4cf0-a73a-1cd84184025c",
-            "bcb7d4c0-2d91-40e2-b47b-546e7e0e0ef9",
             "62ab7eb3-866f-4ed1-a3ba-7ebf7d612c09",
             "2a5d74c0-3bcf-4d6d-8443-f731983a35c4",
             "a93de25d-f83b-47b1-a5fc-eac6593cdd98",
             "3651c04f-3e17-486f-8c26-9bf8509932af",
-            "dfa63ad1-25bc-4bf1-bcca-ac94043e0a5f",
-            "ea2ecf0c-b4f9-4470-804a-84f23e5edf05",
-            "4d52f447-0bbb-4156-a6ae-dcc904b761ec",
-            "4bbf4569-2c70-46a0-83fc-7b747106d6ad",
-            "75da076a-fa03-4f71-ab85-a5e6829ea101",
-            "bf77e915-ec64-4aeb-8efb-3d113aa5ae92",
             "cb69d7a4-15b0-4b82-a05f-e0ee2a91bb66",
             "908a0849-cd42-43f8-8b16-f3bbc211a9a2",
-            "01a0f68d-28b9-4a79-a6b5-2a9d964ab30b",
             "7dc3a8a5-6556-4e63-b402-830192820fba",
             "956444b6-477d-491c-a605-120ba32009ad",
             "0fb5ad92-97a8-4044-a28b-0d92e7cd25f7",
@@ -9099,10 +8971,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "7483c337-85c3-4091-8ff4-2cdb342899b7",
-            "bee562d8-e520-43f8-9103-d2632e861a8d",
-            "b5b561b9-e66f-4a00-b5fa-3f69944c266a",
-            "f76a95d7-7a11-4501-8078-d455e7863e5e",
             "b0f3a02e-5f3c-448a-8151-9c442e3e0c89",
             "55b0a248-b732-42e9-832b-8fe8b61baf6c",
             "ffab2d0c-5198-4f6c-93f9-a869f8c098b2",
@@ -9127,40 +8995,25 @@
             "a67bb3c5-fc66-468d-a632-bdb94daa7b83",
             "05e49a89-f3cd-4e48-bed2-1f3e714f6f6a",
             "56e6927c-9895-4dd9-b871-16ef4befa269",
-            "785c66c0-9315-4771-9b47-2e040ebfdfab",
-            "f3345bd8-9c46-4a48-b98e-dc8b565adb47",
             "f6ad83db-5eae-4016-8939-0f5ca5f3b3da",
             "999deec0-0665-46f9-856e-f42cf697d386",
-            "145d65a6-b5bb-4856-a379-fbce40d2f7e8",
             "20f5e2dc-3d78-4046-8e19-33aa6fbb835e",
             "c1fbbd26-a1ff-4aa4-8685-04d1d4ddcfa7",
             "6905b1de-8d5b-470c-8376-0621147e3f1e",
             "f594c12d-1052-4099-a85a-6f5de766ae74",
             "3a76c1e8-30c3-45ce-8747-bb4f19e89e1c",
-            "54288f13-ce5f-449f-909a-08fc716f8780",
             "deddf235-9b3f-4cbd-a151-d423d9b4b7d8"
         ],
         "technology": [
-            "2e4930d7-3f17-43f9-8016-c4499e456fc7",
-            "80a2950e-216f-43aa-a27e-992be4fe203d"
+            "2e4930d7-3f17-43f9-8016-c4499e456fc7"
         ],
         "vehicles": [
             "5e05a642-1cbf-42ea-be80-1322cf4b14fd",
-            "c82860fc-3654-42ac-a918-2020179ff879",
             "62ab7eb3-866f-4ed1-a3ba-7ebf7d612c09",
-            "4b0989d3-f1bb-4b6e-8981-8a1d789ef1ff",
-            "0b1456ff-1a79-43f4-8b02-4ec92d33181f",
-            "72378a1a-d0fa-4971-ae4f-c10c9807577e",
-            "df1cea6f-1c29-4e9d-b1d9-e0eb9ea85ef6",
-            "01a0f68d-28b9-4a79-a6b5-2a9d964ab30b",
-            "d1114bb4-89b0-439b-b5dd-d306456629ac",
             "f17a2f1f-d854-47d1-b711-d4ad96f508a5",
-            "cb9f0c60-70b8-4e21-ad95-401da926207a",
             "26c287fb-f9d6-4237-a03d-121cc3600621",
             "c6258fd2-def7-402e-affa-cc9046bc7d59",
-            "211f9e91-63bd-4fd7-aef5-ad4b2848129a",
             "ff889c59-d4cf-4ca9-a194-9faccc5fa6cc",
-            "f61d5ff5-473f-4c68-8ec6-a505610785a7",
             "fcf56a71-241e-4083-8887-ba007d4865e4",
             "fe7200fb-e120-48ec-a806-38a15d46ca86",
             "edd7b0a5-bb66-4b26-9ce8-af19a5bd27d3",
@@ -9172,7 +9025,6 @@
             "e92e962a-0c3a-4dca-8d87-0f4d6d1bcc87"
         ],
         "species": [
-            "26e9b982-5591-40d4-bb37-7a572362605f",
             "b15e0f4a-c20d-4b2d-a7e5-a6ff41658f6e",
             "9998916f-d91f-416f-a0fb-886f9bd78348",
             "12c47c66-85e2-4405-b83d-a4445443aff0",
@@ -9181,19 +9033,11 @@
         ],
         "creatures": [],
         "locations": [
-            "8da0be83-9d6f-40b6-84df-85afa88b68c0",
-            "7aff9692-dc80-4eb9-8ed5-cfd183e7f8cb",
-            "3b244eda-9814-4479-a50c-ffaaccf3a8f1",
             "ed30e661-8243-445b-bdcd-e5f081189cb4",
-            "8be251cc-8af0-404e-b70e-b847fc077317",
             "2be3c6f8-047a-4639-8683-196356df15c4",
-            "a9bb1efb-1815-479d-9312-476ffb96be97",
-            "4793050b-7255-405d-b037-341a89a65947",
             "1414070a-0daa-4dc9-bb2f-6c6235a703cb",
             "1f1d229e-6490-4fd9-b93a-10c79eeebd8c",
-            "dac0f8b8-f9f5-4031-b81c-a0c10ab16368",
-            "713eb506-e956-47a6-b743-2eddd1bdac02",
-            "5c4e0130-822a-4786-ae24-158209fbefcb"
+            "713eb506-e956-47a6-b743-2eddd1bdac02"
         ],
         "type": "Organization",
         "id": "c89a858f-f4e0-47eb-a6ef-9ba51e48438a",
@@ -9217,7 +9061,6 @@
         "creatures": [],
         "locations": [
             "87f17a49-96aa-4617-b0ee-85516fd794d0",
-            "e4f70022-3963-42c1-b33f-3b1e10446809",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "type": "Organization",
@@ -9333,9 +9176,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "505b26fa-d26b-4c72-8680-a5de13fc2c80"
-        ],
+        "locations": [],
         "type": "Organization",
         "id": "ef1f91df-9687-4b07-9a23-6c41acdaf3fe",
         "image": "http://img.lum.dolimg.com/v1/images/databank_intergalacticbankingclan_01_169_7d04659f.jpeg?region=355%2C0%2C877%2C878&width=480"
@@ -9351,42 +9192,29 @@
         "organizations": [
             "c89a858f-f4e0-47eb-a6ef-9ba51e48438a",
             "05e49a89-f3cd-4e48-bed2-1f3e714f6f6a",
-            "56e6927c-9895-4dd9-b871-16ef4befa269",
-            "e0c96b12-e975-4c00-b6c7-7b917f5e7f96"
+            "56e6927c-9895-4dd9-b871-16ef4befa269"
         ],
         "technology": [
             "f8cf6774-d4d7-45b7-ae34-05cebf1c98df",
             "11588121-e860-4207-bcf9-e176fa755798",
-            "8a652459-2967-4da5-8105-9fe802fe8557",
-            "d92e6238-d0fc-4807-982c-cdaeb6df1214",
             "2721c0e6-4c2b-4eff-a3e3-9420d5fc75bf",
             "739c9841-e0eb-426b-af3c-7783aa77917e",
             "2dc58bff-fb14-4477-a2ac-1bc25e09aa32",
             "810c0cd0-ef26-4fed-9e27-2e73e44057a1",
             "96332102-7d5b-42ac-a277-e10705e7b22e",
             "13501b71-b143-4571-ab00-e2b80a9a9338",
-            "f66d75de-5007-4407-bca3-8b39220d3294",
-            "54eea6ab-2b08-467b-b05d-1f844ffe1737",
             "495a9f1f-8495-4f1b-b258-26d6a74b1765",
-            "07318f19-ad42-4257-ac04-cf1a72443e01",
             "a3394078-4cdc-4359-89f6-0c057dbf7c34"
         ],
         "vehicles": [
             "261c1494-b23a-4b36-a1b8-cfa5383fa00b",
-            "a038604b-ef56-4874-a217-db6a7bb491c8",
-            "3020a63f-a308-42f3-8e99-02a91a55aad6",
-            "5efbd59b-37bd-4afe-8385-af24523b3641",
-            "93cd3182-fdb2-4bc1-8142-f05aedee7c86"
+            "a038604b-ef56-4874-a217-db6a7bb491c8"
         ],
-        "droids": [
-            "5708d2b6-ee33-4ad1-a969-ed84ca348f72"
-        ],
+        "droids": [],
         "species": [],
         "creatures": [],
         "locations": [
-            "25000561-757c-40f9-9721-a7cb050fad8a",
             "ae713567-f4af-484d-b5d8-4b039ea38a23",
-            "ac9bccf0-418e-4a81-b5da-124d6d8964d9",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "type": "Organization",
@@ -9408,9 +9236,7 @@
         "technology": [
             "a3394078-4cdc-4359-89f6-0c057dbf7c34"
         ],
-        "vehicles": [
-            "93cd3182-fdb2-4bc1-8142-f05aedee7c86"
-        ],
+        "vehicles": [],
         "droids": [],
         "species": [
             "b15e0f4a-c20d-4b2d-a7e5-a6ff41658f6e",
@@ -9419,7 +9245,6 @@
         ],
         "creatures": [],
         "locations": [
-            "ac9bccf0-418e-4a81-b5da-124d6d8964d9",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "type": "Organization",
@@ -9532,7 +9357,6 @@
         "locations": [
             "18f12d26-8b37-4ee1-b7e8-f4293e329cb7",
             "87f852f4-665d-4125-9b7b-fcd7d07c59c5",
-            "a9bb1efb-1815-479d-9312-476ffb96be97",
             "7a54cac6-3e67-43ae-a000-0125c41de661"
         ],
         "type": "Organization",
@@ -9720,9 +9544,6 @@
         ],
         "organizations": [],
         "technology": [
-            "6989ecf3-7588-4f2b-97bd-6d768aaf8510",
-            "8a652459-2967-4da5-8105-9fe802fe8557",
-            "74324c6d-6862-4f7b-a3e4-3b6d64eede48",
             "be611464-7a65-488c-b365-6a783fabed0f",
             "3b634793-7e01-4b84-8d8a-cc89dfdf38ca",
             "be35d05a-a3c3-4513-8dc6-0601f56e3c81",
@@ -9741,10 +9562,7 @@
         ],
         "species": [],
         "creatures": [],
-        "locations": [
-            "244d4a81-1f03-409c-8ec6-f6fdffd51f88",
-            "2924465a-de65-4fa4-b537-9d230022e92c"
-        ],
+        "locations": [],
         "type": "Organization",
         "id": "8cf4cb81-f5c8-484a-8c1d-2d06700e8bf4",
         "image": "http://img.lum.dolimg.com/v1/images/Sith_7abb7b3c.jpeg?region=369%2C0%2C900%2C900&width=480"
@@ -9811,9 +9629,7 @@
         ],
         "technology": [],
         "vehicles": [],
-        "droids": [
-            "bd2facee-e91a-4411-98f8-a56c880846cd"
-        ],
+        "droids": [],
         "species": [],
         "creatures": [],
         "locations": [],
@@ -9936,7 +9752,6 @@
             "28730de2-7bd1-4888-8207-ec1508524a9a",
             "ad18a0ea-f201-457d-a3d6-52f0a2bbf6be",
             "83221a6a-97df-4f70-98bc-407df33ae38a",
-            "a8d33e96-cc7e-421f-9431-ec28a30b881a",
             "1c9ef20e-abcb-4a57-be25-16a82fced466",
             "9a2414bb-7ae7-48fb-9cfa-8b780c749422",
             "ec0c5b91-d1b7-4f94-ab29-70b380b16abd"
@@ -10036,7 +9851,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "48df7024-b4c8-4f66-a3bf-67c84f1a075d",
             "18313348-5b01-49f6-a901-5af2bd6322b3"
         ],
         "dimensions": "",
@@ -10079,7 +9893,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "48df7024-b4c8-4f66-a3bf-67c84f1a075d",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
         "dimensions": "",
@@ -10103,7 +9916,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "4793050b-7255-405d-b037-341a89a65947",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf",
             "294677c0-d71f-411c-82a4-fb7ca5ed486d"
         ],
@@ -10164,9 +9976,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "5c4e0130-822a-4786-ae24-158209fbefcb"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "5cccdac2-fcfe-4969-b5b3-3ac6414fcd66",
@@ -10291,7 +10101,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "df3a8e3f-c39d-4718-bd09-8f11dd8fa1fa",
             "e7cbc1b5-30ad-4311-903d-e73256355822"
         ],
         "dimensions": "",
@@ -10305,17 +10114,13 @@
         "films": [
             "153794ea-0c1b-426a-b844-949171c3340f"
         ],
-        "organizations": [
-            "0655f4b4-9949-4158-83fa-f0c9b6fa690a"
-        ],
+        "organizations": [],
         "technology": [],
         "vehicles": [],
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "52a5508d-c7fd-422a-81c7-c3ca60fd11a0"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "2b2105fd-1f3d-428b-9c4d-db06135fed10",
@@ -10334,8 +10139,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "8da0be83-9d6f-40b6-84df-85afa88b68c0",
-            "48df7024-b4c8-4f66-a3bf-67c84f1a075d",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
         "dimensions": "",
@@ -10357,9 +10160,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "4793050b-7255-405d-b037-341a89a65947"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "bf5eb5c0-5d19-4b1f-9758-619ea6e3dbc7",
@@ -10418,7 +10219,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "87c21ae2-1bff-4a53-b4d7-b67b55ed2df4",
             "2be3c6f8-047a-4639-8683-196356df15c4"
         ],
         "dimensions": "Height: 3.0m ",
@@ -10546,7 +10346,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "094fd084-ea8e-47f3-8e0d-4f57e72459ea",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
         "dimensions": "",
@@ -10701,9 +10500,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "12c47c66-85e2-4405-b83d-a4445443aff0",
@@ -10849,9 +10646,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "acf7e21c-5a21-4e17-be70-78978e32ce55",
@@ -10870,9 +10665,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "e843001a-b906-4c80-9125-a756c55ed122"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "93c90b8e-cf01-4edd-b967-3bdb3f53f57a",
@@ -10930,9 +10723,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "895b17ec-0e7d-4e53-a3cd-ae0e89094836"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "8a13ea80-aeb4-409c-9ec7-9947664dd19c",
@@ -10954,9 +10745,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "d46d4394-a777-4859-a920-93c2446d36c1"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "5382c433-6148-491a-a200-f0bcdc79505e",
@@ -10975,9 +10764,7 @@
         "droids": [],
         "species": [],
         "creatures": [],
-        "locations": [
-            "c3c08189-7822-43f8-8ca9-ca95d2a7777a"
-        ],
+        "locations": [],
         "dimensions": "",
         "type": "Species",
         "id": "a613dbc0-d3b1-4ff1-aad1-8a1a25618065",
@@ -11011,8 +10798,7 @@
             "452e11b5-0100-486b-bb7b-76ec0f7d8075"
         ],
         "organizations": [
-            "c89a858f-f4e0-47eb-a6ef-9ba51e48438a",
-            "dc44f816-cf9c-4a35-9c60-289339923c21"
+            "c89a858f-f4e0-47eb-a6ef-9ba51e48438a"
         ],
         "technology": [],
         "vehicles": [],
@@ -11051,9 +10837,7 @@
         "films": [
             "31715b25-5218-48a6-a5f7-f75a7c461000"
         ],
-        "organizations": [
-            "baa4381a-85ad-403d-bc56-c79789037428"
-        ],
+        "organizations": [],
         "technology": [],
         "vehicles": [],
         "droids": [],
@@ -11167,7 +10951,6 @@
             "153794ea-0c1b-426a-b844-949171c3340f"
         ],
         "organizations": [
-            "720720a6-421e-4d26-b356-a1f69fd000d7",
             "f594c12d-1052-4099-a85a-6f5de766ae74"
         ],
         "technology": [],
@@ -11252,7 +11035,6 @@
             "153794ea-0c1b-426a-b844-949171c3340f"
         ],
         "organizations": [
-            "d49601c7-34bb-44e5-94e7-aaaa72264085",
             "8cf4cb81-f5c8-484a-8c1d-2d06700e8bf4"
         ],
         "technology": [],
@@ -11462,9 +11244,7 @@
             "31715b25-5218-48a6-a5f7-f75a7c461000",
             "03334339-b3be-4e89-bfe6-092e05a246c2"
         ],
-        "organizations": [
-            "c2f9d433-8dc5-4d7a-bfc5-91ab93bc814e"
-        ],
+        "organizations": [],
         "technology": [],
         "vehicles": [],
         "droids": [],
@@ -11602,12 +11382,8 @@
             "999deec0-0665-46f9-856e-f42cf697d386",
             "5a855cf3-6425-4c08-8b1b-4a52e2783256",
             "6b1e8b83-38a7-4905-8715-70dd15b08cd0",
-            "145d65a6-b5bb-4856-a379-fbce40d2f7e8",
             "2f5b8ae8-ecff-49b0-bd13-b1a1efe99c03",
-            "8ba41715-174a-43e6-816c-cbd1f2ee178b",
             "3a76c1e8-30c3-45ce-8747-bb4f19e89e1c",
-            "c2f9d433-8dc5-4d7a-bfc5-91ab93bc814e",
-            "d19c4ba3-39fe-4e5f-b986-f45d5fd8b247",
             "dcfd5a49-c2fe-469c-90a0-c723a80952d0",
             "deddf235-9b3f-4cbd-a151-d423d9b4b7d8"
         ],
@@ -11642,26 +11418,19 @@
             "31d2401d-f51c-46e0-b98e-c0f9f6274212",
             "217c0b82-efd4-44d8-be10-eda6a809e9fb",
             "308bed2a-8d2f-42f9-b2a1-046538a8a5c5",
-            "baa4381a-85ad-403d-bc56-c79789037428",
             "999deec0-0665-46f9-856e-f42cf697d386",
             "5a855cf3-6425-4c08-8b1b-4a52e2783256",
-            "145d65a6-b5bb-4856-a379-fbce40d2f7e8",
             "2f5b8ae8-ecff-49b0-bd13-b1a1efe99c03",
-            "8ba41715-174a-43e6-816c-cbd1f2ee178b",
-            "c2f9d433-8dc5-4d7a-bfc5-91ab93bc814e",
             "dcfd5a49-c2fe-469c-90a0-c723a80952d0",
             "deddf235-9b3f-4cbd-a151-d423d9b4b7d8"
         ],
         "technology": [],
         "vehicles": [],
         "droids": [
-            "bc465697-74d5-4ae5-b2b9-a538391e85c4",
-            "960afc70-a7b6-4a1b-b22a-5142e9939a2a",
             "cca6c457-b4e0-462e-9bee-aa1404704f46"
         ],
         "species": [
-            "b15e0f4a-c20d-4b2d-a7e5-a6ff41658f6e",
-            "71911480-7eeb-47b3-80b5-a749bf08508b"
+            "b15e0f4a-c20d-4b2d-a7e5-a6ff41658f6e"
         ],
         "creatures": [],
         "locations": [],
@@ -12460,7 +12229,6 @@
         "species": [],
         "creatures": [],
         "locations": [
-            "d133c3af-21a5-43f9-8a39-ba2a40a7e6e3",
             "209e66b7-fb7b-4894-a1c2-672c2ed7ebbf"
         ],
         "dimensions": "Length: 9.5m ",
@@ -12557,7 +12325,6 @@
             "31715b25-5218-48a6-a5f7-f75a7c461000"
         ],
         "organizations": [
-            "f6ba9375-6fe3-461d-b9dc-482c580f6c43",
             "6b1e8b83-38a7-4905-8715-70dd15b08cd0",
             "d2e8fe79-7535-440b-99a3-d356957cd755"
         ],
@@ -13231,9 +12998,7 @@
             "12c47c66-85e2-4405-b83d-a4445443aff0"
         ],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "dimensions": "Length: 1200.0m ",
         "type": "Vehicle",
         "id": "69b1fc12-c268-4293-b522-f5acc8546bdd",
@@ -13342,9 +13107,7 @@
             "12c47c66-85e2-4405-b83d-a4445443aff0"
         ],
         "creatures": [],
-        "locations": [
-            "a9bb1efb-1815-479d-9312-476ffb96be97"
-        ],
+        "locations": [],
         "dimensions": "Length: 1200.0m ",
         "type": "Vehicle",
         "id": "41b40323-d3bc-4ae4-be5f-0be1e3b717ad",
@@ -13755,7 +13518,6 @@
         ],
         "organizations": [
             "800c55ba-e4ce-4b8e-bffe-f3da1fcc5b98",
-            "c2f9d433-8dc5-4d7a-bfc5-91ab93bc814e",
             "20ad1dff-75db-4f12-a49a-4459032f8d1d"
         ],
         "technology": [],
