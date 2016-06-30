@@ -8,6 +8,8 @@
 	let swSata = {};
 	let itemNames = {};
 	let linkKeys = {};
+	let legendOpen = false;
+	let feedbackOpen = false;
 
 	let physics = {
 		springLength: 100,
@@ -82,38 +84,45 @@
 
     $('#feedbackButton').on('click', function() {
 
-        var source = $('#feedbackTemplate').text();
-		var template = new plate.Template(source);
+		if (feedbackOpen) {
+			closeFeedbackCard();
+			feedbackOpen = !feedbackOpen;
+		}
+		else {
 
-		closeCard();
-		closeLegendCard();
+			var source = $('#feedbackTemplate').text();
+			var template = new plate.Template(source);
 
-        template.render({}, function (err, html) {
+			closeCard();
+			closeLegendCard();
 
-            $('#feedback').html(html);
-        });        
-    });
+			template.render({}, function (err, html) {
 
-    $('body').on('click', '#closeFeedback', function() {
-		closeFeedbackCard();
+				$('#feedback').html(html);
+			});
+			feedbackOpen = !feedbackOpen;
+		}        
     });
 
 	$('#legendButton').on('click', function() {
 
-		var source = $('#legendTemplate').text();
-		var template = new plate.Template(source);
+		if(legendOpen) {
+			closeLegendCard();
+			legendOpen = !legendOpen;
+		}
+		else {
+			var source = $('#legendTemplate').text();
+			var template = new plate.Template(source);
 
-		closeCard();
-		closeFeedbackCard();
+			closeCard();
+			closeFeedbackCard();
 
-		template.render({}, function (err, html) {
+			template.render({}, function (err, html) {
 
-			$('#legend').html(html);
-		});
-	});
-
-	$('body').on('click', '#closeLegend', function() {
-		closeLegendCard();
+				$('#legend').html(html);
+			});
+			legendOpen = !legendOpen;
+		}
 	});
 
 	function mapOrganizations(item, organization) {

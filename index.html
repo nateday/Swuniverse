@@ -31,16 +31,15 @@
 			<div class="col-sm-12">
 				<div class="thumbnail page-layout animated bounceInLeft" id="legendCard">
 					<h2>Legend</h2>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: blue;"></i> Films</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #3E9D33;"></i> Characters</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: purple;"></i> Creatures</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: orange;"></i> Droids</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #D0F8AB;"></i> Species</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #1C5423;"></i> Organizations</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: #663300;"></i> Locations</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: red;"></i> Technology</p>
-					<p><i class="fa fa-circle-thin" aria-hidden="true" style="color: yellow;"></i> Vehicles</p>
-					<button type="button" class="btn btn-small btn-danger" id="closeLegend">Close</button>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #286090;"></i> Films</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #3E9D33;"></i> Characters</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #8d23a3;"></i> Creatures</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #FFA500;"></i> Droids</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #D0F8AB;"></i> Species</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #1C5423;"></i> Organizations</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #663300;"></i> Locations</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #C9302C;"></i> Technology</p>
+					<p><i class="fa fa-circle" aria-hidden="true" style="color: #FFE81F;"></i> Vehicles</p>
 				</div>
 			</div>
 		</div>
@@ -66,7 +65,6 @@
 						</div>
 						<div class="btn-group">
 							<button class="btn btn-small btn-success">Submit</button>
-							<button type="button" class="btn btn-small btn-danger" id="closeFeedback">Close</button>
 						</div>
 					</form>
 				</div>
@@ -116,8 +114,12 @@
 						<div class="lightsaber animated26 bounceInRight"></div>
 						<br>
 						<p>{{ description }}</p>
+						{% if gender %}
 						<p>Gender: {{ gender }}</p>
+						{% endif %}
+						{% if dimensions %}
 						<p>Dimensions: {{ dimensions }}</p>
+						{% endif %}
 					</div>
 				</div>
 			</div>
@@ -142,8 +144,12 @@
 						<div class="lightsaber animated26 bounceInRight"></div>
 						<br>
 						<p>{{ description }}</p>
+						{% if climate %}
 						<p>Climate: {{ climate }}</p>
+						{% endif %}
+						{% if terrain %}
 						<p>Terrain: {{ terrain }}</p>
+						{% endif %}
 					</div>
 				</div>
 			</div>
@@ -168,7 +174,9 @@
 						<div class="lightsaber animated26 bounceInRight"></div>
 						<br>
 						<p>{{ description }}</p>
-						<p>Dimensions: {{ dimension }}</p>
+						{% if dimensions %}
+						<p>Dimensions: {{ dimensions }}</p>
+						{% endif %}
 					</div>
 				</div>
 			</div>
