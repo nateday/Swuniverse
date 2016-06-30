@@ -8,6 +8,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 	overflow: hidden;
 }
+input{
+	border-radius: 2px;
+}
+textarea{
+	border-radius: 5px;
+}
 a{
 	text-decoration: none !important; 
 	cursor: pointer;
@@ -15,9 +21,6 @@ a{
 audio {
 	display: none;
 }
-/*i {
-	color: #C9302C;
-}*/
 img {
 	border-radius: 5px;
 }
@@ -84,11 +87,62 @@ img {
 	border: 2px solid #C9302C;
 	color: #C9302C;
 	padding: 5px;
-	margin: 0 40px;
+	margin: 0 80px;
 	border-radius: 10px;
 	/*box-shadow: 0 0 30px #C9302C;
 	text-shadow: 0 0 20px #C9302C;*/
 	text-transform: uppercase;
+}
+.legend-color{
+	color: black;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 20px;
+	margin: 5px 50px;
+	padding: 7px;
+}
+.br{
+	margin-bottom: 17px;
+}
+#john-legend{
+	color: white;
+	text-transform: uppercase;
+}
+.john-feedback{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+#film{
+	background-color: #286090;
+}
+#characters{
+	background-color: #3E9D33;
+}
+#creatures{
+	background-color: #8d23a3;
+}
+#droids{
+	background-color: #FFA500;
+}
+#species{
+	background-color: #D0F8AB;
+}
+#organizations{
+	background-color: #1C5423;
+}
+#locations{
+	background-color: #663300;
+}
+#technology{
+	background-color: #C9302C;
+}
+#vehicles{
+	background-color: #FFE81F;
+}
+
+.glow-white{
+	-webkit-animation: glowWhite 1.5s ease-in-out infinite alternate;
 }
 .glow-blue {
 	-webkit-animation: glowBlue 1.5s ease-in-out infinite alternate;
@@ -121,6 +175,16 @@ img {
 	-webkit-animation: glowRed 1.5s ease-in-out infinite alternate;
 }
 
+@-webkit-keyframes glowWhite {
+from {
+	box-shadow: 0 0 70px #999, 0 0 80px #999;
+	text-shadow: 0 0 70px #999, 0 0 80px #999;
+}
+to {
+	box-shadow: 0 0 40px #999;
+	text-shadow: 0 0 40px #999;
+}
+}
 @-webkit-keyframes glowBlue {
 from {
 	box-shadow: 0 0 70px #286090, 0 0 80px #286090;
