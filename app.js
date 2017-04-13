@@ -20,7 +20,7 @@
 		dragCoeff: 0.02
 	};
 
-	$.get('/data.json', function(json) {
+	$.get('data.json', function(json) {
 
 		swData = json;
 
