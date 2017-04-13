@@ -4,6 +4,7 @@
 	let renderGraph = require('ngraph.pixel');
 	let _ = require('lodash');
 	let plate = require('plate');
+	let flyTo = require('ngraph.pixel/lib/flyTo');
 
 	let swSata = {};
 	let itemNames = {};
@@ -42,11 +43,34 @@
 		});
 
 		let renderer = renderGraph(graph, {
+			clearAlpha: 0.0,
 			container: document.getElementById('graph'),
 			physics: physics,
 			node: createNodeUI,
 			link: createLinkUI
 		});
+
+		let showNode = function(nodeId, stopDistance) {
+
+			startDistance = 500;
+			stopDistance = typeof stopDistance === 'number' ? stopDistance : 100;
+
+			var self = this;
+
+			var interval = setInterval(function() {
+
+				flyTo(self.camera(), self.layout().getNodePosition(nodeId), startDistance);
+				startDistance -= 10;
+
+				if(startDistance < stopDistance) {
+					clearInterval(interval);
+				}
+			}, 1);
+		}
+
+		renderer.showNode = showNode.bind(renderer);
+
+		//console.log('Graph: ', renderer);
 
 		renderer.on('nodeclick', function (node) {
 			console.log(node);	
